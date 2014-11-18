@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: latex | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/latex/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fun with Regexes!]]></title>
+    <link href="http://mcpantz.org/blog/2008/02/19/fun-with-regexes/"/>
+    <updated>2008-02-19T22:27:44-06:00</updated>
+    <id>http://mcpantz.org/blog/2008/02/19/fun-with-regexes</id>
+    <content type="html"><![CDATA[<p>A gem of a post came across my <a href="http://www.uchicago.edu">alma mater</a>&rsquo;s computer science mailing list: <a href="http://http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/">Prime detection using regular expressions</a>. It&rsquo;s quite a clever hack; what it actually defines is all numbers that are <em>not</em> prime, but the negation of that creates the primes.</p>
+
+<p>It&rsquo;s that pesky  <code>/\1+/</code> that makes this whole expression work, and it&rsquo;s what prevents this regex from being a regular expression.  Regexes have long since stopped being regular expressions, but it&rsquo;s a programming language unto itself.</p>
+
+<p>A while back, I did LaTeX parsing in Perl, and used a one-level parser (custom for LaTeX) and a incredible amount of regexes in order so slice and dice this massive corpus of data.  Unfortunately, I didn&rsquo;t know about Parse::RecDescent then, or else I would have put myself out of a job very quickly.  But I wonder, can parentheses (a recursive language) be validated as a regular expression language yet?  Better yet, is the language itself Turing complete?  Perl regexes, at least, have a lot of very extended features, and this will require some unusual digging.</p>
+]]></content>
+  </entry>
+  
+</feed>

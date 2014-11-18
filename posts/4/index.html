@@ -1,0 +1,486 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>M.C. Pantz</title>
+  <meta name="author" content="Paul C. Mantz">
+
+  
+  <meta name="description" content="A gem of a post came across my alma mater&rsquo;s computer science mailing list: Prime detection using regular expressions. It&rsquo;s quite a clever &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://mcpantz.org/posts/4">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="M.C. Pantz" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">M.C. Pantz</a></h1>
+  
+    <h2>Something Bloglike</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:mcpantz.org" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/02/19/fun-with-regexes/">Fun With Regexes!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2008-02-19T22:27:44-06:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>19</span><span class='date-suffix'>th</span>, <span class='date-year'>2008</span></span> <span class='time'>10:27 pm</span></time>
+        
+           | <a href="/blog/2008/02/19/fun-with-regexes/#disqus_thread"
+             data-disqus-identifier="http://mcpantz.org/blog/2008/02/19/fun-with-regexes/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A gem of a post came across my <a href="http://www.uchicago.edu">alma mater</a>&rsquo;s computer science mailing list: <a href="http://http://www.noulakaz.net/weblog/2007/03/18/a-regular-expression-to-check-for-prime-numbers/">Prime detection using regular expressions</a>. It&rsquo;s quite a clever hack; what it actually defines is all numbers that are <em>not</em> prime, but the negation of that creates the primes.</p>
+
+<p>It&rsquo;s that pesky  <code>/\1+/</code> that makes this whole expression work, and it&rsquo;s what prevents this regex from being a regular expression.  Regexes have long since stopped being regular expressions, but it&rsquo;s a programming language unto itself.</p>
+
+<p>A while back, I did LaTeX parsing in Perl, and used a one-level parser (custom for LaTeX) and a incredible amount of regexes in order so slice and dice this massive corpus of data.  Unfortunately, I didn&rsquo;t know about Parse::RecDescent then, or else I would have put myself out of a job very quickly.  But I wonder, can parentheses (a recursive language) be validated as a regular expression language yet?  Better yet, is the language itself Turing complete?  Perl regexes, at least, have a lot of very extended features, and this will require some unusual digging.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/02/16/hack-the-planet/">Hack the Planet!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2008-02-16T15:24:13-06:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>16</span><span class='date-suffix'>th</span>, <span class='date-year'>2008</span></span> <span class='time'>3:24 pm</span></time>
+        
+           | <a href="/blog/2008/02/16/hack-the-planet/#disqus_thread"
+             data-disqus-identifier="http://mcpantz.org/blog/2008/02/16/hack-the-planet/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Ever since I was a kid, I wanted a legitimate excuse to use that phrase.  Thankfully, it seems that io9 has <a href="http://io9.com/356862/top-5-ways-to-hack-the-surface-of-the-earth">found a few good ones.</a></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/02/10/i-met-the-author-of-dr-fun/">I Met the Author of Dr. Fun!</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2008-02-10T18:11:10-06:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>10</span><span class='date-suffix'>th</span>, <span class='date-year'>2008</span></span> <span class='time'>6:11 pm</span></time>
+        
+           | <a href="/blog/2008/02/10/i-met-the-author-of-dr-fun/#disqus_thread"
+             data-disqus-identifier="http://mcpantz.org/blog/2008/02/10/i-met-the-author-of-dr-fun/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>So I don&rsquo;t know if any of you are familiar with <a href="http://www.ibiblio.org/Dave/">Dr. Fun</a>, but it&rsquo;s a webcomic that I&rsquo;ve been reading since i figured out what webcomics were.  At some point in my college career I realized that the author was lurking around the basement of the Regenstein, the library at the University of Chicago, but I never went to go ferret him out.</p>
+
+<p>It turns out that he&rsquo;s directly my friend&rsquo;s <a href="http://dwarmstr.blogspot.com/">Dean</a>&rsquo;s boss, who this week gave me some old hardware they were not using.  I met Mr. Farley, who was a quiet, enthusiastic geek; pretty much exactly like I envisioned him.  he then showed me an original VT100.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/02/01/ambition/">Ambition</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2008-02-01T14:01:20-06:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2008</span></span> <span class='time'>2:01 pm</span></time>
+        
+           | <a href="/blog/2008/02/01/ambition/#disqus_thread"
+             data-disqus-identifier="http://mcpantz.org/blog/2008/02/01/ambition/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>A couple ex-coworkers and I have come up with a startup idea and bought some domain names.  I can&rsquo;t divulge much, but I assure you the idea is very worthwhile and completely hilarious.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/01/31/indecision/">Indecision</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2008-01-31T19:53:25-06:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>31</span><span class='date-suffix'>st</span>, <span class='date-year'>2008</span></span> <span class='time'>7:53 pm</span></time>
+        
+           | <a href="/blog/2008/01/31/indecision/#disqus_thread"
+             data-disqus-identifier="http://mcpantz.org/blog/2008/01/31/indecision/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>There are about a million things I feel like I could be doing to prepare myself for employment.  Unfortunately, I am considering so many divergent paths that&rsquo;s there&rsquo;s no real good way to get them to feed into each other.  I get the most immediate feedback from tyoing around with this blog, but I know that I&rsquo;m probably get the most financial return from studying massive amounts of C++, and probably the most brain workout as well.  It seems like if i want to go anywhere as a serious programmer, I need to start learning some hardcore Python.  I still tinker around with LaTeX because I find it calming and I&rsquo;m occasionally helping my past employers, and everyone&rsquo;s telling me to do something different.  But hey, I&rsquo;m just going to keep doing what&rsquo;s fun and rewarding.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/01/25/wordpress-hackery/">WordPress Hackery</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2008-01-25T17:53:02-06:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2008</span></span> <span class='time'>5:53 pm</span></time>
+        
+           | <a href="/blog/2008/01/25/wordpress-hackery/#disqus_thread"
+             data-disqus-identifier="http://mcpantz.org/blog/2008/01/25/wordpress-hackery/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>If I haven&rsquo;t already foisted it upon you, I decided to create a blog outside of the standard venues of Facebook and Livejournal.  I did figure, however, that I wouldn&rsquo;t gain much traffic this way, so I decided to do the analog of Moodblast and &lsquo;blog-blast&#8217;  to all four corners of the internet with my WordPress site.  You should be able to comment back with both other sites, but I suggest that you visit my main blog, <a href="http://www.mcpantz.org/blog/">http://www.mcpantz.org/blog/</a> .  Nothing&rsquo;s stable at the moment, but I hope you come check it out to see how I&rsquo;m doing.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/01/24/a-new-beginning/">A New Beginning</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2008-01-24T18:41:29-06:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2008</span></span> <span class='time'>6:41 pm</span></time>
+        
+           | <a href="/blog/2008/01/24/a-new-beginning/#disqus_thread"
+             data-disqus-identifier="http://mcpantz.org/blog/2008/01/24/a-new-beginning/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Hello everyone,</p>
+
+<p>My name&rsquo;s Paul Mantz and I&rsquo;m starting a public blog.  I plan on putting my professional endeavours here; as well as my hobbies, interests, and other such things I may want public feedback on.   So sit back, relax, and enjoy the show.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2008/01/22/about/">About Me</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2008-01-22T13:48:05-06:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>22</span><span class='date-suffix'>nd</span>, <span class='date-year'>2008</span></span> <span class='time'>1:48 pm</span></time>
+        
+           | <a href="/blog/2008/01/22/about/#disqus_thread"
+             data-disqus-identifier="http://mcpantz.org/blog/2008/01/22/about/">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Paul Mantz is a recent graduate of the University of Chicago in Computer Science, and a programmer at large based out of Chicago.  Some of the weirder skills I&rsquo;ve picked up along the way are TeX/LaTeX programming (weird if you are under 40), Dan Zan Ryu Jujitsu, disturbing levels of Perl proficiency, and an unusual affection for Fourier transforms.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  <div class="pagination">
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/posts/3">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2012/10/21/moving-from-escreen-to-workgroups/">Moving From Escreen to Workgroups</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/">Shell Paths on Mountain Lion Are a Confusing Mess</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/24/iterators-make-you-lazy/">Iterators Make You Lazy</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/24/old-domain-new-blog-taste/">Old Domain, New Blog Taste!</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/06/17/yapc-na-post-mortem/">YAPC::NA Post-Mortem</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/pcmantz">@pcmantz</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'pcmantz',
+            count: 4,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>My Pinboard</h1>
+  <ul id="pinboard_linkroll">Fetching linkroll&#8230;</ul>
+  <p><a href="http://pinboard.in/u:angelixd">My Pinboard Bookmarks &raquo;</a></p>
+</section>
+<script type="text/javascript">
+  var linkroll = 'pinboard_linkroll'; //id target for pinboard list
+  var pinboard_user = "angelixd"; //id target for pinboard list
+  var pinboard_count = 3; //id target for pinboard list
+  (function(){
+    var pinboardInit = document.createElement('script');
+    pinboardInit.type = 'text/javascript';
+    pinboardInit.async = true;
+    pinboardInit.src = '/javascripts/pinboard.js';
+    document.getElementsByTagName('head')[0].appendChild(pinboardInit);
+  })();
+</script>
+
+
+<section class="googleplus googleplus-hidden">
+  <h1>
+    <a href="https://plus.google.com/pcmantz@gmail.com?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
+
+
+
+  
+</aside>
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Paul C. Mantz -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'mcpantz';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

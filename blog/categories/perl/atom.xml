@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: perl | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/perl/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Iterators Make You Lazy]]></title>
+    <link href="http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/"/>
+    <updated>2012-06-24T15:25:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy</id>
+    <content type="html"><![CDATA[<p>One of the most productive &ldquo;A-Ha!&rdquo; moments I&rsquo;ve had as a developer came when I
+learned how to use iterators, and the dramatic effect that it has on my coding
+style. When we introduced the concept to one layer of code to handle a
+specific problem, the pattern of development proved infectious for dealing
+with similar workflows and managed to make our code much more succinct and
+understandable to newcomers.</p>
+
+<p>At a past place of $WORK, I worked on a project where we wanted to add a
+REST-ful API to our data, but we had to deal with blocking SQL queries whose
+completion took longer than any sane HTTP timeout should be. The result was
+that we needed to stream the formatted output of the query.</p>
+
+<p>It turns out that most REST-type plugins for Catalyst don&rsquo;t handle streaming
+output, so we couldn&rsquo;t use something off the shelf.  However, we did discover
+a module called
+<a href="https://metacpan.org/module/Iterator::Simple">Iterator::Simple</a>.  This
+allowed us to construct on-the-fly formatters that we could then stream to the
+users. Now all of our code stopped looking like ugly while loops and temporary
+variables, and turned into this:</p>
+
+<pre><code class="perl">use Iterator::Simple qw(iflatten imap);
+
+sub format_nodes {
+    my ($nodes_rs) = @_;
+
+    iflatten [
+       '&lt;nodes&gt;',
+        imap { format_node($_) } $nodes_rs, 
+        '&lt;/nodes&gt;',
+    ];
+}
+</code></pre>
+
+<p>The fun didn&rsquo;t stop there.  It started becoming clear that chaining and
+passing around iterators was a great way to quickly set up the construction of
+data sets, then pass those constructions along to consumers. A small library
+of macros had managed to invade our code and make it very, very lazy.</p>
+
+<p>It turned out that many of our data preparation routines were expressible as
+computations that didn&rsquo;t need to live in memory. Anywhere we were running a
+loop and processing data, we could refactor that region with <code>imap</code> and a code
+block, and have the code execute on a per-needed basis.</p>
+
+<p>The only one gripe that I have with this module is that its file handle
+emulation is incomplete.  The module emulates the <code>getline</code> syntax; e.g.; the
+<code>&amp;&lt;&gt;</code> operator, but not the method. Right now,
+<a href="https://metacpan.org/source/MIYAGAWA/Catalyst-Engine-PSGI-0.13/lib/Catalyst/Engine/PSGI.pm">Catalyst::Engine::PSGI</a>
+assumes that the <code>getline</code> method is implemented on the resource to be
+streamed.  This is true of file handles, but not of
+<code>Iterator::Simple::Iterator</code> objects. If the latter provided that interface,
+then this module would increase dramatically in utility. I have filed
+<a href="https://rt.cpan.org/Public/Bug/Display.html?id=72629">a bug</a> and submitted a
+patch, so we&rsquo;ll see how it plays out.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[YAPC::NA Post-Mortem]]></title>
+    <link href="http://mcpantz.org/blog/2012/06/17/yapc-na-post-mortem/"/>
+    <updated>2012-06-17T23:37:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/06/17/yapc-na-post-mortem</id>
+    <content type="html"><![CDATA[<p>I attended my Fourth <a href="http://yapcna.org/">YAPC::NA</a> this past week, and just
+as usual, I had a blast. Conferences are valuable experiences that allow one
+to step back and re-evaluate one&rsquo;s work compared to the Zeitgeist of the
+community.</p>
+
+<p>There were a lot of excellent talks this year, and even more that I didn&rsquo;t
+see.  The one that left everyone&rsquo;s jaw on the floor was
+<a href="twitter.com/mcholste">Martin Holste</a>&rsquo;s
+<a href="http://blog.yapcna.org/post/23780340461/perl-for-big-data">Perl For Big Data</a>. There
+were a lot of talks on &ldquo;big data&rdquo; but The sheer <em>audacity</em> that this project
+displayed was impressive.  Holste demonstrated lightning fast search,
+management-pleasing data analysis, and massive distributed throughput on some
+absurd amount of real-time data. The amazing part of it all was that his team
+accomplished this not by scaling up their hardware, but by using standard open
+source software to its limits.</p>
+
+<p>Another general trend that I&rsquo;m quite happy to see is that Perl hackers are
+thieving magpies. Stevan Little of <a href="http://moose.perl.org/">Moose</a> fame
+demonstrated <a href="https://metacpan.org/module/Web::Machine">Web::Machine</a> as a
+clone of Basho&rsquo;s <a href="http://wiki.basho.com/Webmachine.html">Webmachine</a>. I am
+merely looking for an excuse to use it
+now. <a href="http://www.genehack.org/">Genehack</a> also unveiled
+<a href="https://github.com/genehack/HiD">HiD</a>, a Jekyll clone. I was surprised that
+Miyagawa, one of the first Perl hackers to be notorious for rifling the pocket
+change of other language&rsquo;s libraries, did not show off any new libraries, but
+did a great talk on comparing his experiences with the Python and Ruby
+ecosystems he has plumbed in the past, and how to bring the good parts back to
+Perl.</p>
+
+<p>Beyond the technical, it was fun to connect and reconnect with a lot of people
+I&rsquo;ve interacted with on IRC, twitter, and in past lives at past jobs. I am
+definitely looking forward to going back again in the future, and I hope to
+entice more folk to YAPC, both those new to Perl and those who toil in the
+shadows (you know who you are!)</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Building DBD::Pg for perlbrew on Ubuntu]]></title>
+    <link href="http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/"/>
+    <updated>2012-05-23T12:57:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu</id>
+    <content type="html"><![CDATA[<p>I get a lot of benefit from managing my own Perl via perlbrew, but I&rsquo;m fine
+using Ubuntu&rsquo;s packaged Postgres sever. However, Ubuntu strips down a lot of
+its applications into components, and you have to install development versions
+and header files separately if you want to compile everything. I&rsquo;m putting
+this here for anyone who might be trying to install DBD::Pg on top of
+perlbrew.  I&rsquo;m not going to claim this will work in all circumstances, and it
+assumes you have already installed Postgres, but it definitely worked for me.</p>
+
+<pre><code>sudo apt-get install libpq5 postgresql-server-dev-9.1
+POSTGRES_HOME='/usr/lib/postgresql/9.1' POSTGRES_INCLUDE='/usr/include/postgresql' cpanm Bundle::DBD::Pg
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Perl Jails and You: local::lib, perlbrew, and Friends]]></title>
+    <link href="http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib/"/>
+    <updated>2012-02-08T23:39:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib</id>
+    <content type="html"><![CDATA[<p>In the ruby world, many people are aware of the
+<a href="http://beginrescueend.com/">ruby rvm</a> tool for ruby version management. Perl
+is not generally thought of as a virtual machine with an isolable environment,
+because of its frequent deep intertwining with the host operating system.
+However, there are tools that make this possible.</p>
+
+<p>The problem with using Perl in this fashion is not that the solution does not
+occur to people, but that the solution occurs to <em>many</em> people simultaneously.
+Most of the hacker luminaries in the Perl world have invented a respective
+solution. <a href="http://search.cpan.org/~bdfoy/">brian d foy</a> has written of his own
+<a href="http://stackoverflow.com/questions/398221/how-do-you-manage-perl-modules-when-using-a-package-manager/398397#398397">solution</a>,
+there is a <a href="https://metacpan.org/module/perlrocks">rubygems</a> implementation in
+the wild, and the packaging problem has had multiple attempts made on it.
+Today, I&rsquo;d like to review the best-in-class applications, and how to use them.</p>
+
+<h2>local::lib</h2>
+
+<p><a href="https://metacpan.org/module/local::lib">local::lib</a> creates the the
+configuration configuration information for a perl package directory without
+affecting the system perl&rsquo;s library paths. Before worrying about your base
+perl installation, you should know <code>local::lib</code>.  If you have a trustworthy
+sysadmin or are a junior dev on a team, this is most likely your situation.</p>
+
+<p><code>local::lib</code> lets you try install modules locally before installing them in a
+shared environment to experiment with new features, or install bleeding-edge
+versions of Perl-based command line apps like
+<a href="https://metacpan.org/module/App::GitGot">App::GitGot</a>,
+<a href="https://metacpan.org/module/App::Ack">App::Ack</a> for personal use.</p>
+
+<h2>perlbrew</h2>
+
+<p>Are you developing in an environment where you have to test against multipleo
+perl binaries? Then you should probably give <a href="http://perlbrew.pl/">perlbrew</a> a
+try.</p>
+
+<p>This application in a fully-featured suite for bootstrapping a perl
+environment. The perlbrew script allows you to install multiple versions of
+Perl and maintain library directories much more conveniently. In this regards,
+it is much more like rvm.</p>
+
+<p>Another similar feature that perlbrew shares with rvm is its management of
+library assets. The perlbrew binary includes a command to install cpanminus,
+which hopefully you are using now already (If you are not, I will have to
+write another blog post!) This copy coordinates with the built-in lib
+functionality to install libaries to the current chosen perl, minimizing the
+fuss and clash and conflict.</p>
+
+<h2>Combinations Thereof</h2>
+
+<p>If you are a solo developer who does not need to coordinate the usage of your
+development machine with other users, than <em>use perlbrew</em>. It provides the
+solutions of all the applications directly in a reproducible, scriptable
+manner.</p>
+
+<p>If you are in a situation where setting up your own perl is a troublesome
+wreck, use <code>local::lib</code>. You will have a clean library path to experiment
+with, and you can feel no guild whatsoever when you muck up a dependency and
+need to blow it away.</p>
+
+<p>Regardless of anything, use the right tool for the right job, and make sure
+you know that you are getting what you need. If you aren&rsquo;t, complain on
+<a href="http://www.irc.perl.org/">IRC</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Large Files in Emacs]]></title>
+    <link href="http://mcpantz.org/blog/2012/02/05/large-files-in-emacs/"/>
+    <updated>2012-02-05T15:43:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/02/05/large-files-in-emacs</id>
+    <content type="html"><![CDATA[<p>I have started work on a new project where a lot of the source files are huge;
+files are commonly over 1,000 lines in length.  While this is a massive
+<a href="http://www.codinghorror.com/blog/2006/05/code-smells.html">code smell</a> that
+needs to be dealt with, it doesn&rsquo;t preclude the necessity of working with the
+file in the first place.</p>
+
+<p>It appears that emacs has no problem navigating the files, but editing large
+files is a royal pain in the rear end.  It appears that the only reasonable
+solution to shut off <code>'font-lock-mode</code>.</p>
+
+<p>In addition, I have been using
+<a href="http://www.emacswiki.org/emacs/CPerlModeOutlineMode">outline-minor-mode</a> to
+narrow the focus of my attention.  Having a top-down view of the file which I
+am working with really helps.</p>
+
+<p>I wonder how much hacking would be involved to make comments associated with
+their own header; or in the case of indented comments, with the level above
+them; as sort of a &ldquo;floating&rdquo; header level rather than a specific one.</p>
+]]></content>
+  </entry>
+  
+</feed>

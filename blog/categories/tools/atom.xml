@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: tools | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/tools/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Iterators Make You Lazy]]></title>
+    <link href="http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/"/>
+    <updated>2012-06-24T15:25:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy</id>
+    <content type="html"><![CDATA[<p>One of the most productive &ldquo;A-Ha!&rdquo; moments I&rsquo;ve had as a developer came when I
+learned how to use iterators, and the dramatic effect that it has on my coding
+style. When we introduced the concept to one layer of code to handle a
+specific problem, the pattern of development proved infectious for dealing
+with similar workflows and managed to make our code much more succinct and
+understandable to newcomers.</p>
+
+<p>At a past place of $WORK, I worked on a project where we wanted to add a
+REST-ful API to our data, but we had to deal with blocking SQL queries whose
+completion took longer than any sane HTTP timeout should be. The result was
+that we needed to stream the formatted output of the query.</p>
+
+<p>It turns out that most REST-type plugins for Catalyst don&rsquo;t handle streaming
+output, so we couldn&rsquo;t use something off the shelf.  However, we did discover
+a module called
+<a href="https://metacpan.org/module/Iterator::Simple">Iterator::Simple</a>.  This
+allowed us to construct on-the-fly formatters that we could then stream to the
+users. Now all of our code stopped looking like ugly while loops and temporary
+variables, and turned into this:</p>
+
+<pre><code class="perl">use Iterator::Simple qw(iflatten imap);
+
+sub format_nodes {
+    my ($nodes_rs) = @_;
+
+    iflatten [
+       '&lt;nodes&gt;',
+        imap { format_node($_) } $nodes_rs, 
+        '&lt;/nodes&gt;',
+    ];
+}
+</code></pre>
+
+<p>The fun didn&rsquo;t stop there.  It started becoming clear that chaining and
+passing around iterators was a great way to quickly set up the construction of
+data sets, then pass those constructions along to consumers. A small library
+of macros had managed to invade our code and make it very, very lazy.</p>
+
+<p>It turned out that many of our data preparation routines were expressible as
+computations that didn&rsquo;t need to live in memory. Anywhere we were running a
+loop and processing data, we could refactor that region with <code>imap</code> and a code
+block, and have the code execute on a per-needed basis.</p>
+
+<p>The only one gripe that I have with this module is that its file handle
+emulation is incomplete.  The module emulates the <code>getline</code> syntax; e.g.; the
+<code>&amp;&lt;&gt;</code> operator, but not the method. Right now,
+<a href="https://metacpan.org/source/MIYAGAWA/Catalyst-Engine-PSGI-0.13/lib/Catalyst/Engine/PSGI.pm">Catalyst::Engine::PSGI</a>
+assumes that the <code>getline</code> method is implemented on the resource to be
+streamed.  This is true of file handles, but not of
+<code>Iterator::Simple::Iterator</code> objects. If the latter provided that interface,
+then this module would increase dramatically in utility. I have filed
+<a href="https://rt.cpan.org/Public/Bug/Display.html?id=72629">a bug</a> and submitted a
+patch, so we&rsquo;ll see how it plays out.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Old Blog Content Converted]]></title>
+    <link href="http://mcpantz.org/blog/2012/05/25/old-blog-content-converted/"/>
+    <updated>2012-05-25T13:14:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/05/25/old-blog-content-converted</id>
+    <content type="html"><![CDATA[<p>I converted all my old published content from <a href="http://www.mcpantz.org">mcpantz.org</a> to this new GitHub page.  Once I confirm that everything else is in place I am going to cancel the other page, and save a few bucks on hosting. In the meantime, enjoy any content that you may not have seen before.</p>
+
+<p>If you are redirected to this page after the domain name switch; apologies for the broken link.  Please use a newer, more stable permalink that my site now provides.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Setting up rxvt-unicode on Ubuntu 11.10]]></title>
+    <link href="http://mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/"/>
+    <updated>2012-01-29T21:54:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been an Ubuntu &amp; Mint user for the past few years.  I am not particularly
+focused on usability or community, but it is nice using an operating system
+where most of the kinks have been ironed out for me by the efforts of others.</p>
+
+<p>Lately, I decided to abandon
+<a href="http://www.tenshu.net/p/terminator.html">Terminator</a> in favor of
+<a href="http://software.schmorp.de/pkg/rxvt-unicode.html">rxvt-unicode</a>,
+a.k.a. <code>urxvt</code>.  Already I&rsquo;ve found it to be a lot snappier, but installation
+was not simple.  There are a few hoops to jump through yet.</p>
+
+<h2>Install ncurses-term</h2>
+
+<p>Apparently the ubuntu packagers haven&rsquo;t gotten around to bundling the
+<a href="http://en.wikipedia.org/wiki/Terminfo">terminfo</a> entry for rxvt-unicode into
+the package itself, as they probably don&rsquo;t think you need programs like
+<code>screen</code> or <code>tmux</code>.  Rather, Ubuntu wants to to install yet another package,
+which has no related dependencies. be sure to install the ncurses-term
+package, which seems like a good idea anyways.  And if you&rsquo;d like to tell the
+Ubuntu packagers that they should fix this, you can go check out this
+<a href="https://bugs.launchpad.net/ubuntu/+source/rxvt-unicode/+bug/772924">bug report</a>.</p>
+
+<h2>Installing rxvt-unicode</h2>
+
+<p>This part is relatively easy, just install the <code>rxvt-unicode</code> package and its
+dependencies.</p>
+
+<h2>Setting up the environment</h2>
+
+<p>Configuring <code>rxvt-unicode</code> is done through the <code>~/.Xdefaults</code> configuration
+file, which is the historic location of all X11 application data. Since it is
+a grab-bag of a file, it is a little harder to find examples.  However, I have
+munged through a few and posted my end product in
+<a href="https://gist.github.com/1721879">this gist</a>.</p>
+
+<p>If you take nothing else from this configuration, <em>please</em> change the default
+colors.  Your eyes will thank me for it, since the blue will be legible.</p>
+
+<h2>Where From Here</h2>
+
+<p>By no means is this journey over.  It turns out that my console is only
+supporting 88 colors, and that there are
+<a href="http://blog.oldworld.fr/index.php?post/2010/03/21/256-colors-terminal-with-tmux-and-urxvt">others</a>
+who have had the same problem.</p>
+]]></content>
+  </entry>
+  
+</feed>

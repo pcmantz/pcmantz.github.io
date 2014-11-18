@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: zmanda | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/zmanda/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Employment!]]></title>
+    <link href="http://mcpantz.org/blog/2008/02/22/employment/"/>
+    <updated>2008-02-22T20:07:17-06:00</updated>
+    <id>http://mcpantz.org/blog/2008/02/22/employment</id>
+    <content type="html"><![CDATA[<p>If I haven&rsquo;t already given you an ecstatic phone call or instant message, then I should tell you that I&rsquo;ve just accepted an offer from <a href="http://www.zmanda.com">Zmanda</a> as a design engineer.  I feel really lucky with this; as I&rsquo;m going to be working in my most familiar language (Perl) to make some fairly robust code user-friendly.  I&rsquo;ll be heading up a new project to investigate adding a new open-source project to our lineup; so I&rsquo;ll be in a lot of murky waters, but it&rsquo;s going to be a lot of fun to work with, and give I&rsquo;ll have the opportunity to collaborate while being fairly autonomous.</p>
+
+<p>I&rsquo;m sure I&rsquo;ll be blogging more about the crazy things I&rsquo;m going to end up doing in Perl as a result.  Object-oriented Perl is simple yet quite bizarre, so it&rsquo;ll be an interesting experience to delve further into its depths.  I also have a couple fun ideas for some perl modules, so keep your eyes open.</p>
+]]></content>
+  </entry>
+  
+</feed>

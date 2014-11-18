@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: emacs | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/emacs/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Moving from escreen to workgroups]]></title>
+    <link href="http://mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups/"/>
+    <updated>2012-10-21T14:05:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups</id>
+    <content type="html"><![CDATA[<p>I use Emacs to manage multiple different projects simultaneously. Every
+professional engagement I&rsquo;ve had so far has had me working on multiple
+codebases at once. Add these to this my elisp and Org Mode files, and that&rsquo;s a
+lot of frames to have open!</p>
+
+<p>My first attempt at managing multiple projects had the unintended consequence
+of holding me back from fully realizing the full potential of Emacs. I ran
+<code>emacsclient</code> sessions in GNU Screen for each project I worked on. I could
+flip between different frame configurations, each one set up for an individual
+project.  This worked well enough that it kept me from running Emacs as a
+graphical interface.</p>
+
+<p>Eventually, <a href="http://jrock.us/">Jon Rockway</a> convinced me that I should abandon
+command-line emacs and use Emacs as it was intended; as a graphical
+application. However, I had developed a dependence on multiplexing in my
+workflow that was hard to break. I first tried
+<a href="http://www.emacswiki.org/emacs/EmacsLispScreen">Elscreen</a>, which allowed me
+to try multiplexing my projects natively in Emacs. However, the default
+configuration took up screen real estate and I didn&rsquo;t have the patience to try
+and remove it; so I quickly started to look for alternatives.</p>
+
+<h2>Escreen</h2>
+
+<p>The next option I came across was
+<a href="http://www.emacswiki.org/emacs/EmacsScreen">escreen</a>. This was better suited
+to my workflow, and it used existing resources to manage workspace
+switching. Specifically, it embedded the window configurations into the buffer
+used to store frame configuration information, which I thought was
+ingenious. I was able to configure it so that my transitions between my
+constantly open GNU Screen terminal and Emacs was seamless. I would combine
+this with matching up the screen numbers per project, which allowed me to
+navigate my project transitions with very little mnemonic overhead.</p>
+
+<p>Escreen is an excellent package, but still left a few features wanting.
+Specifically, I wanted:</p>
+
+<ul>
+<li>Named Workgroups - While matching up terminal numbers goes a long way, it
+would be much better if I could give my window configurations meaningful
+names.</li>
+<li>Persistence - I set my windows up in the same configuration and order, and
+reconfiguring emacs takes a while.  The more I can automate that process,
+the better.</li>
+<li>Active Development - <code>escreen</code> hasn&rsquo;t seen any development in a few years,
+and I do not have the time and/or experience to round off the sharp edges.</li>
+</ul>
+
+
+<h2>Workgroups</h2>
+
+<p>A bit of research led me to check out
+<a href="http://www.emacswiki.org/emacs/WorkgroupsForWindows">workgroups</a>. Puns aside,
+this is an excellent piece of software for managing window configurations. I
+was able to install the package from MELPA and configure it close enough to my
+<code>escreen</code> configuration so that I haven&rsquo;t been able to functionally notice the
+difference. Here is what I have so far:</p>
+
+<pre><code class="cl">;; workgroups
+(require 'workgroups)
+(setq wg-prefix-key (kbd "C-z")
+      wg-no-confirm t
+      wg-file (concat elisp-dir "/workgroups")
+      wg-use-faces nil
+      wg-switch-on-load nil)
+
+(defun wg-load-default ()
+  "Run `wg-load' on `wg-file'."
+  (interactive)
+  (wg-load wg-file))
+
+(defun wg-save-default ()
+  "Run `wg-save' on `wg-file'."
+  (interactive)
+  (when wg-list
+    (with-temp-message ""
+      (wg-save wg-file))))
+
+(define-key wg-map (kbd "g") 'wg-switch-to-workgroup)
+(define-key wg-map (kbd "C-l") 'wg-load-default)
+(define-key wg-map (kbd "C-s") 'wg-save-default)
+(define-key wg-map (kbd "&lt;backspace&gt;") 'wg-switch-left)
+(workgroups-mode 1)
+(add-hook 'auto-save-hook 'wg-save-default)
+(add-hook 'kill-emacs-hook 'wg-save-default)
+</code></pre>
+
+<p>Most of the code here was provided by this Stack Overflow
+<a href="http://stackoverflow.com/questions/11263960/what-is-the-best-emacs-workspaces-plugin">post</a>.</p>
+
+<p>So what do I have now?</p>
+
+<ul>
+<li><p>I can now switch to workgroups by name! This makes it much easier for me to
+name projects and completely forget about matching up numbers. I can still
+match up numbers if I want, but why bother?</p></li>
+<li><p>I can restore my workgroup list after a restart. This makes it much easier
+to reboot and get back to where I left off.</p></li>
+<li><p>Re-ordering workgroups is easy and awesome.  Using my configuration, <code>C-z
+C-,</code> and <code>C-z C-.</code> will move a workgroup left and right, respectively. This
+makes it much easier to arrange things in case something gets out of whack.</p></li>
+<li><p>All my key bindings are still the same. I don&rsquo;t have to worry about altering
+any of my muscle memory to accommodate for a new workflow; it is just the
+same plus more features.</p></li>
+</ul>
+
+
+<h2>The Ugly Remains</h2>
+
+<p><code>workgroups</code> is definitely a much more mature and polished product. Despite
+this, <code>escreen</code> was able to dodge a lot of rough edges and rely on Emacs&rsquo;s own
+built in abstractions by using the frame buffer to host workgroups that I am
+missing with <code>workgroups</code> so far:</p>
+
+<ul>
+<li>Per-workgroup switch-buffer lists - With <code>escreen</code>, each workgroup had its
+own list of visited buffers.  This meant that my buffer visiting activities
+bled into each other less frequently.  It appears that with <code>workgroup</code> that
+the visited buffer list is not localized to the workgroup, which is
+frustrating.</li>
+</ul>
+
+
+<h2>Final Steps</h2>
+
+<p>Despite the progress, There are a few things left on my to-do list for <code>workgroups</code>.</p>
+
+<ul>
+<li><p>Persistent buffers - I haven&rsquo;t yet managed this. The only thing that gets
+saved and restored right now are my buffer names.</p></li>
+<li><p>Default new workgroups - I would like to have some default behavior when
+creating new windows. I name my windows after my projects; if I open a
+workgroup <code>foo</code> and there exists a directory <code>$HOME/git/foo</code>, I would like
+for the window to have a magit buffer there open to the project, waiting for
+me.  If I could get this to work in conjunction with
+<a href="https://github.com/jrockway/eproject">eproject</a> or
+<a href="https://github.com/bbatsov/projectile">projectile</a>, that would be icing on
+the cake.</p></li>
+</ul>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Large Files in Emacs]]></title>
+    <link href="http://mcpantz.org/blog/2012/02/05/large-files-in-emacs/"/>
+    <updated>2012-02-05T15:43:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/02/05/large-files-in-emacs</id>
+    <content type="html"><![CDATA[<p>I have started work on a new project where a lot of the source files are huge;
+files are commonly over 1,000 lines in length.  While this is a massive
+<a href="http://www.codinghorror.com/blog/2006/05/code-smells.html">code smell</a> that
+needs to be dealt with, it doesn&rsquo;t preclude the necessity of working with the
+file in the first place.</p>
+
+<p>It appears that emacs has no problem navigating the files, but editing large
+files is a royal pain in the rear end.  It appears that the only reasonable
+solution to shut off <code>'font-lock-mode</code>.</p>
+
+<p>In addition, I have been using
+<a href="http://www.emacswiki.org/emacs/CPerlModeOutlineMode">outline-minor-mode</a> to
+narrow the focus of my attention.  Having a top-down view of the file which I
+am working with really helps.</p>
+
+<p>I wonder how much hacking would be involved to make comments associated with
+their own header; or in the case of indented comments, with the level above
+them; as sort of a &ldquo;floating&rdquo; header level rather than a specific one.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[For all my Emacs cohorts out there]]></title>
+    <link href="http://mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there/"/>
+    <updated>2008-09-29T16:27:04-05:00</updated>
+    <id>http://mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there</id>
+    <content type="html"><![CDATA[<p>How do you like having an extremely extensible, mature, and stable text editor.  I sure do.  One thing that always bugged me when writing code is going through and finding all sorts of annoying trailing whitespace.  For most major modes, tabs are converted to spaces for consistency, but trailing whitespaces are neglected.  I was considering writing an elisp function to go ahead and take care this until I found <a href="http://www.splode.com/~friedman/software/emacs-lisp/src/whitespace.el">This little gem</a>.  I suggest that anyone that has to deal with syntax where trailing whitespace is ignored to have a crack at this.</p>
+
+<p>For that matter, the rest of the interface enhancements on <a href="http://www.splode.com/~friedman/software/emacs-lisp/">the main page</a> look like they&rsquo;d be excellent additions to one&rsquo;s <tt>~/elisp/</tt> folder even today; as for the most part, the code here dates back to the early 90&rsquo;s.  Emacs isn&rsquo;t exactly a popular mail client anymore&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>

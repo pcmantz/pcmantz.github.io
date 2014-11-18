@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: art | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/art/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[A Survey of Contemporary Poetry]]></title>
+    <link href="http://mcpantz.org/blog/2008/07/02/a-survey-of-contemporary-poetry/"/>
+    <updated>2008-07-02T03:22:36-05:00</updated>
+    <id>http://mcpantz.org/blog/2008/07/02/a-survey-of-contemporary-poetry</id>
+    <content type="html"><![CDATA[<p>Because I&rsquo;ve never had one.  Frankly, most poetry that gets handed off to me, I have a very low opinion of.  However, a bit of googling led me to <a href="http://www.palace.net/~llama/poetry/">this highlights collection</a>, and refreshes my opinion of the beauty of brevity of words.  Can anyone else recommend poets that are capable of delivering the full value of their words without making it feel like a laborious, overwrought exercise?  Just like coding, music and every other subjective field I&rsquo;ve come across, there is beauty to be found in minimalism.</p>
+]]></content>
+  </entry>
+  
+</feed>

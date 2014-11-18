@@ -1,98 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
 
-<!DOCTYPE html>
-<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
-<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
-<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <title>M.C. Pantz</title>
-  <meta name="author" content="Paul C. Mantz">
-
-  
-  <meta name="description" content="I use Emacs to manage multiple different projects simultaneously. Every
-professional engagement I&rsquo;ve had so far has had me working on multiple &hellip;">
-  
-
-  <!-- http://t.co/dKP3o1e -->
-  <meta name="HandheldFriendly" content="True">
-  <meta name="MobileOptimized" content="320">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><![CDATA[M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
 
   
-  <link rel="canonical" href="http://mcpantz.org">
-  <link href="/favicon.png" rel="icon">
-  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="M.C. Pantz" type="application/atom+xml">
-  <script src="/javascripts/modernizr-2.0.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
-  <script src="/javascripts/octopress.js" type="text/javascript"></script>
-  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
-<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
-
-  
-
-</head>
-
-<body   >
-  <header role="banner"><hgroup>
-  <h1><a href="/">M.C. Pantz</a></h1>
-  
-    <h2>Something Bloglike</h2>
-  
-</hgroup>
-
-</header>
-  <nav role="navigation"><ul class="subscription" data-subscription="rss">
-  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
-  
-</ul>
-  
-<form action="https://www.google.com/search" method="get">
-  <fieldset role="search">
-    <input type="hidden" name="q" value="site:mcpantz.org" />
-    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
-  </fieldset>
-</form>
-  
-<ul class="main-navigation">
-  <li><a href="/">Blog</a></li>
-  <li><a href="/blog/archives">Archives</a></li>
-  <li><a href="/about">About</a></li>
-</ul>
-
-</nav>
-  <div id="main">
-    <div id="content">
-      <div class="blog-index">
-  
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/10/21/moving-from-escreen-to-workgroups/">Moving From Escreen to Workgroups</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-10-21T14:05:00-05:00'><span class='date'><span class='date-month'>Oct</span> <span class='date-day'>21</span><span class='date-suffix'>st</span>, <span class='date-year'>2012</span></span> <span class='time'>2:05 pm</span></time>
-        
-           | <a href="/blog/2012/10/21/moving-from-escreen-to-workgroups/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I use Emacs to manage multiple different projects simultaneously. Every
+  <entry>
+    <title type="html"><![CDATA[Moving From Escreen to Workgroups]]></title>
+    <link href="http://mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups/"/>
+    <updated>2012-10-21T14:05:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups</id>
+    <content type="html"><![CDATA[<p>I use Emacs to manage multiple different projects simultaneously. Every
 professional engagement I&rsquo;ve had so far has had me working on multiple
 codebases at once. Add these to this my elisp and Org Mode files, and that&rsquo;s a
 lot of frames to have open!</p>
@@ -259,38 +185,15 @@ me.  If I could get this to work in conjunction with
 the cake.</p></li>
 </ul>
 
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/">Shell Paths on Mountain Lion Are a Confusing Mess</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-08-01T00:41:00-05:00'><span class='date'><span class='date-month'>Aug</span> <span class='date-day'>1</span><span class='date-suffix'>st</span>, <span class='date-year'>2012</span></span> <span class='time'>12:41 am</span></time>
-        
-           | <a href="/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I am setting up an OS X 10.8 (Mountain Lion) machine as a development
+  <entry>
+    <title type="html"><![CDATA[Shell Paths on Mountain Lion Are a Confusing Mess]]></title>
+    <link href="http://mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/"/>
+    <updated>2012-08-01T00:41:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess</id>
+    <content type="html"><![CDATA[<p>I am setting up an OS X 10.8 (Mountain Lion) machine as a development
 machine. For my own personal use I prefer using a Linux box, but between my
 own nostalgia for <a href="http://www.gentoo.org/">Gentoo</a> and the peculiar yet
 undeniable strength of <a href="http://mxcl.github.com/homebrew/">homebrew</a>, I am
@@ -316,38 +219,15 @@ file to make things right:</p>
 
 
 <p>So far, no problems.  Will report back later.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/24/iterators-make-you-lazy/">Iterators Make You Lazy</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-06-24T15:25:00-05:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>3:25 pm</span></time>
-        
-           | <a href="/blog/2012/06/24/iterators-make-you-lazy/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>One of the most productive &ldquo;A-Ha!&rdquo; moments I&rsquo;ve had as a developer came when I
+  <entry>
+    <title type="html"><![CDATA[Iterators Make You Lazy]]></title>
+    <link href="http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/"/>
+    <updated>2012-06-24T15:25:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy</id>
+    <content type="html"><![CDATA[<p>One of the most productive &ldquo;A-Ha!&rdquo; moments I&rsquo;ve had as a developer came when I
 learned how to use iterators, and the dramatic effect that it has on my coding
 style. When we introduced the concept to one layer of code to handle a
 specific problem, the pattern of development proved infectious for dealing
@@ -412,38 +292,15 @@ streamed.  This is true of file handles, but not of
 then this module would increase dramatically in utility. I have filed
 <a href="https://rt.cpan.org/Public/Bug/Display.html?id=72629">a bug</a> and submitted a
 patch, so we&rsquo;ll see how it plays out.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/24/old-domain-new-blog-taste/">Old Domain, New Blog Taste!</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-06-24T00:33:00-05:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>12:33 am</span></time>
-        
-           | <a href="/blog/2012/06/24/old-domain-new-blog-taste/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/06/24/old-domain-new-blog-taste/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>Within the next 24 hours, my <a href="http://pcmantz.github.com">GitHub Page</a> should
+  <entry>
+    <title type="html"><![CDATA[Old Domain, New Blog Taste!]]></title>
+    <link href="http://mcpantz.org/blog/2012/06/24/old-domain-new-blog-taste/"/>
+    <updated>2012-06-24T00:33:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/06/24/old-domain-new-blog-taste</id>
+    <content type="html"><![CDATA[<p>Within the next 24 hours, my <a href="http://pcmantz.github.com">GitHub Page</a> should
 be accessible any- and everywhere from my preferred vanity domain,
 <a href="http://mcpantz.org">mcpantz.org</a>. Right now I am having it redirect as a
 top-level domain, mostly for shortened URL length.  I would love to hear of
@@ -455,38 +312,15 @@ posts had embedded URLs to images that are now broken.  I&rsquo;m not too keen o
 <a href="http://imageshack.us/">ImageShack</a> was the early 00&rsquo;s.  Does anyone have some
 good, modern suggestion for long-term image hosting, particularly for
 hot-linking into websites?</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/06/17/yapc-na-post-mortem/">YAPC::NA Post-Mortem</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-06-17T23:37:00-05:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>17</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>11:37 pm</span></time>
-        
-           | <a href="/blog/2012/06/17/yapc-na-post-mortem/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/06/17/yapc-na-post-mortem/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I attended my Fourth <a href="http://yapcna.org/">YAPC::NA</a> this past week, and just
+  <entry>
+    <title type="html"><![CDATA[YAPC::NA Post-Mortem]]></title>
+    <link href="http://mcpantz.org/blog/2012/06/17/yapc-na-post-mortem/"/>
+    <updated>2012-06-17T23:37:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/06/17/yapc-na-post-mortem</id>
+    <content type="html"><![CDATA[<p>I attended my Fourth <a href="http://yapcna.org/">YAPC::NA</a> this past week, and just
 as usual, I had a blast. Conferences are valuable experiences that allow one
 to step back and re-evaluate one&rsquo;s work compared to the Zeitgeist of the
 community.</p>
@@ -520,72 +354,26 @@ I&rsquo;ve interacted with on IRC, twitter, and in past lives at past jobs. I am
 definitely looking forward to going back again in the future, and I hope to
 entice more folk to YAPC, both those new to Perl and those who toil in the
 shadows (you know who you are!)</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/25/old-blog-content-converted/">Old Blog Content Converted</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-05-25T13:14:00-05:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>25</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>1:14 pm</span></time>
-        
-           | <a href="/blog/2012/05/25/old-blog-content-converted/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/05/25/old-blog-content-converted/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I converted all my old published content from <a href="http://www.mcpantz.org">mcpantz.org</a> to this new GitHub page.  Once I confirm that everything else is in place I am going to cancel the other page, and save a few bucks on hosting. In the meantime, enjoy any content that you may not have seen before.</p>
+  <entry>
+    <title type="html"><![CDATA[Old Blog Content Converted]]></title>
+    <link href="http://mcpantz.org/blog/2012/05/25/old-blog-content-converted/"/>
+    <updated>2012-05-25T13:14:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/05/25/old-blog-content-converted</id>
+    <content type="html"><![CDATA[<p>I converted all my old published content from <a href="http://www.mcpantz.org">mcpantz.org</a> to this new GitHub page.  Once I confirm that everything else is in place I am going to cancel the other page, and save a few bucks on hosting. In the meantime, enjoy any content that you may not have seen before.</p>
 
 <p>If you are redirected to this page after the domain name switch; apologies for the broken link.  Please use a newer, more stable permalink that my site now provides.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/">Building DBD::Pg for Perlbrew on Ubuntu</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-05-23T12:57:00-05:00'><span class='date'><span class='date-month'>May</span> <span class='date-day'>23</span><span class='date-suffix'>rd</span>, <span class='date-year'>2012</span></span> <span class='time'>12:57 pm</span></time>
-        
-           | <a href="/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I get a lot of benefit from managing my own Perl via perlbrew, but I&rsquo;m fine
+  <entry>
+    <title type="html"><![CDATA[Building DBD::Pg for Perlbrew on Ubuntu]]></title>
+    <link href="http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/"/>
+    <updated>2012-05-23T12:57:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu</id>
+    <content type="html"><![CDATA[<p>I get a lot of benefit from managing my own Perl via perlbrew, but I&rsquo;m fine
 using Ubuntu&rsquo;s packaged Postgres sever. However, Ubuntu strips down a lot of
 its applications into components, and you have to install development versions
 and header files separately if you want to compile everything. I&rsquo;m putting
@@ -596,38 +384,15 @@ assumes you have already installed Postgres, but it definitely worked for me.</p
 <pre><code>sudo apt-get install libpq5 postgresql-server-dev-9.1
 POSTGRES_HOME='/usr/lib/postgresql/9.1' POSTGRES_INCLUDE='/usr/include/postgresql' cpanm Bundle::DBD::Pg
 </code></pre>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/08/perl-jails-and-you-local-lib/">Perl Jails and You: Local::lib, Perlbrew, and Friends</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-02-08T23:39:00-06:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>8</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>11:39 pm</span></time>
-        
-           | <a href="/blog/2012/02/08/perl-jails-and-you-local-lib/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>In the ruby world, many people are aware of the
+  <entry>
+    <title type="html"><![CDATA[Perl Jails and You: Local::lib, Perlbrew, and Friends]]></title>
+    <link href="http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib/"/>
+    <updated>2012-02-08T23:39:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib</id>
+    <content type="html"><![CDATA[<p>In the ruby world, many people are aware of the
 <a href="http://beginrescueend.com/">ruby rvm</a> tool for ruby version management. Perl
 is not generally thought of as a virtual machine with an isolable environment,
 because of its frequent deep intertwining with the host operating system.
@@ -689,38 +454,15 @@ need to blow it away.</p>
 <p>Regardless of anything, use the right tool for the right job, and make sure
 you know that you are getting what you need. If you aren&rsquo;t, complain on
 <a href="http://www.irc.perl.org/">IRC</a>.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/02/05/large-files-in-emacs/">Large Files in Emacs</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-02-05T15:43:00-06:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>5</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>3:43 pm</span></time>
-        
-           | <a href="/blog/2012/02/05/large-files-in-emacs/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/02/05/large-files-in-emacs/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I have started work on a new project where a lot of the source files are huge;
+  <entry>
+    <title type="html"><![CDATA[Large Files in Emacs]]></title>
+    <link href="http://mcpantz.org/blog/2012/02/05/large-files-in-emacs/"/>
+    <updated>2012-02-05T15:43:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/02/05/large-files-in-emacs</id>
+    <content type="html"><![CDATA[<p>I have started work on a new project where a lot of the source files are huge;
 files are commonly over 1,000 lines in length.  While this is a massive
 <a href="http://www.codinghorror.com/blog/2006/05/code-smells.html">code smell</a> that
 needs to be dealt with, it doesn&rsquo;t preclude the necessity of working with the
@@ -738,38 +480,15 @@ am working with really helps.</p>
 <p>I wonder how much hacking would be involved to make comments associated with
 their own header; or in the case of indented comments, with the level above
 them; as sort of a &ldquo;floating&rdquo; header level rather than a specific one.</p>
-</div>
+]]></content>
+  </entry>
   
-  
-
-
-    </article>
-  
-  
-    <article>
-      
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/">Setting Up Rxvt-unicode on Ubuntu 11.10</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-<time class='entry-date' datetime='2012-01-29T21:54:00-06:00'><span class='date'><span class='date-month'>Jan</span> <span class='date-day'>29</span><span class='date-suffix'>th</span>, <span class='date-year'>2012</span></span> <span class='time'>9:54 pm</span></time>
-        
-           | <a href="/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/#disqus_thread"
-             data-disqus-identifier="http://mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/">Comments</a>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p>I&rsquo;ve been an Ubuntu &amp; Mint user for the past few years.  I am not particularly
+  <entry>
+    <title type="html"><![CDATA[Setting Up Rxvt-unicode on Ubuntu 11.10]]></title>
+    <link href="http://mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/"/>
+    <updated>2012-01-29T21:54:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ve been an Ubuntu &amp; Mint user for the past few years.  I am not particularly
 focused on usability or community, but it is nice using an operating system
 where most of the kinks have been ironed out for me by the efforts of others.</p>
 
@@ -812,163 +531,156 @@ colors.  Your eyes will thank me for it, since the blue will be legible.</p>
 supporting 88 colors, and that there are
 <a href="http://blog.oldworld.fr/index.php?post/2010/03/21/256-colors-terminal-with-tmux-and-urxvt">others</a>
 who have had the same problem.</p>
-</div>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[Rubyland]]></title>
+    <link href="http://mcpantz.org/blog/2012/01/14/rubyland/"/>
+    <updated>2012-01-14T18:47:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/01/14/rubyland</id>
+    <content type="html"><![CDATA[<p>Today, I gave ruby&rsquo;s ecosystem of web tools a try.  Wordpress isn&rsquo;t a good
+blogging solution for me, but i would like to have a public-facing,
+non-site-specific blog to pass about.  I am giving
+<a href="http://octopress.org/">Octopress</a> a try for managing my my non-machine
+readable output.</p>
+
+<p>I am enjoying the prospect of using a completely flatfile blog; as that means
+I have one less moving part to worry about.</p>
+
+<p>Hopefully I will have the motivation to post about some useful information
+here.  It turns out that the things that infuriate me tend to be very helpful
+to others, so keep your eyes peeled.</p>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[CPAN Shenanigans]]></title>
+    <link href="http://mcpantz.org/blog/2009/05/20/cpan-shenanigans/"/>
+    <updated>2009-05-20T17:15:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2009/05/20/cpan-shenanigans</id>
+    <content type="html"><![CDATA[<p>I just requested a CPAN account last night.  Hopefully I&rsquo;ll have the gumption to throw up all those that I feel are missing that I&rsquo;ve been missing that I would be very happy to add.  one of them is glob-match support in perl that&rsquo;s file-system agnostic.</p>
 
-
-    </article>
+<p>Of course, My first module&rsquo;s going to be a result of some <a href="http://scavhunt.uchicago.edu/" title="The University of Chicago Scavenger Hunt">Scav Hunt</a> tomfoolery, which I&rsquo;ll be sure to post about later, once it&rsquo;s up.  Let&rsquo;s just say that Jewish numerology will get a lot easier now.</p>
+]]></content>
+  </entry>
   
-  <div class="pagination">
-    
-      <a class="prev" href="/posts/2">&larr; Older</a>
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
-</div>
-<aside class="sidebar">
+  <entry>
+    <title type="html"><![CDATA[Pumping Station: One Progress]]></title>
+    <link href="http://mcpantz.org/blog/2009/05/05/pumping-station-one-progress/"/>
+    <updated>2009-05-05T18:07:37-05:00</updated>
+    <id>http://mcpantz.org/blog/2009/05/05/pumping-station-one-progress</id>
+    <content type="html"><![CDATA[<p>What did i do this weekend?  I helped <a href="http://pumpingstationone.org/blog/2009/05/buildout-weekend---part-2-the-loft.html" title="Buildout Weekend - Part 2: The Loft">build a loft</a>, that&rsquo;s what.  And it was awesome.</p>
+
+<p>Next up on the agenda: I feel sometimes that I&rsquo;m the leader of the software interests at PS:1 somewhat, so I&rsquo;m going to make an executive decision on this.  I have many, many different projects going on aside from hacking, so I can&rsquo;t show up at the space every day like some of the more dedicated members have been doing.  Instead, I&rsquo;m just going to be regular about this.</p>
+
+<p>I&rsquo;m going to try and make it to the space Wednesday night and Sunday afternoon.  Anyone interested in programming languages, esoteric languages, functional programming, and software engineering should show up and talk/yell at me.  If enough people show up, we&rsquo;ll call it a meetup group.  If they don&rsquo;t, I&rsquo;ll read &amp; study by myself, and get anti-social and even more stabbity.  Your call.</p>
+]]></content>
+  </entry>
   
-    <section>
-  <h1>Recent Posts</h1>
-  <ul id="recent_posts">
-    
-      <li class="post">
-        <a href="/blog/2012/10/21/moving-from-escreen-to-workgroups/">Moving From Escreen to Workgroups</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/">Shell Paths on Mountain Lion Are a Confusing Mess</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/06/24/iterators-make-you-lazy/">Iterators Make You Lazy</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/06/24/old-domain-new-blog-taste/">Old Domain, New Blog Taste!</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/06/17/yapc-na-post-mortem/">YAPC::NA Post-Mortem</a>
-      </li>
-    
-  </ul>
-</section>
+  <entry>
+    <title type="html"><![CDATA[Back to Your Normal Scheduled Program]]></title>
+    <link href="http://mcpantz.org/blog/2009/02/22/back-to-your-normal-scheduled-program/"/>
+    <updated>2009-02-22T22:59:40-06:00</updated>
+    <id>http://mcpantz.org/blog/2009/02/22/back-to-your-normal-scheduled-program</id>
+    <content type="html"><![CDATA[<p>After a bit of database corruption sweeped under the rug, I&rsquo;m back and as ornery as ever.  However, this has brought me to an empasse, as I didn&rsquo;t know what to do with Wordpress in the event of a disaster.  However, I could manage to hack Movable Type pretty well, as it&rsquo;s written in a language that doesn&rsquo;t make me want to choke up bile, and I&rsquo;d feel more like contributing to that project than anything.</p>
 
-<section>
-  <h1>GitHub Repos</h1>
-  <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
-  </ul>
+<p>So there&rsquo;s a minute possiblity that this blog might make some changes in the future&ndash;stay tuned.</p>
+]]></content>
+  </entry>
   
-  <a href="https://github.com/pcmantz">@pcmantz</a> on GitHub
+  <entry>
+    <title type="html"><![CDATA[Changes in Routine]]></title>
+    <link href="http://mcpantz.org/blog/2009/01/22/changes-in-routine/"/>
+    <updated>2009-01-22T01:39:48-06:00</updated>
+    <id>http://mcpantz.org/blog/2009/01/22/changes-in-routine</id>
+    <content type="html"><![CDATA[<p>If you&rsquo;ve known me for any length of time, you&rsquo;d know I hate mornings.  We&rsquo;re not talking cutesy Garfield grumpiness, we&rsquo;re talking it&rsquo;s-sharp-objects-time distaste for life.  College let me cement a lax schedule in my life, and working from home lets it continue.</p>
+
+<p>Over Christmas break, my sleeping schedule got completely discombobulated, since I had about eleven consecutive days.  For the next week, it was difficult for me to get up before noon, and was getting worse.  Finally a couple weeks ago, a couple naps aligned my sleep schedule in such a way that I was getting up between 5 and 7 am; something I haven&rsquo;t done since my high school days.</p>
+
+<p>So far, the major difference is how I use my time.  I usually spend the hours between midnight and 4am doing a lot of nothing.  It&rsquo;s me time, but I&rsquo;m usually surfing the internet or watching TV.  When I get up early, I eat (something I used to not do as well), relax online for a while, then get to work.  The relaxed pace of the morning has helped me concentrate on my tasks a lot better than before.  This also lets me leave my afternoons open to socialize or work on my own projects, which I&rsquo;ve been lamenting for quite a while.</p>
+
+<p>However, it&rsquo;s harder for me to stay up late.  During the week I&rsquo;ve been going to bed at about midnight or so, but on weekends I rarely get to bed before 4am.  Yes, my social life is just that draining.  I&rsquo;m worried about flipping schedules again, but I think I&rsquo;ll be able to maintain it.</p>
+
+<p>I did unintentionally crash from about 5pm til midnight this past Sunday after a particularly draining night and a brunch with friends that didn&rsquo;t leave me but five hours of sleep.   This is probably also a result of sleeping only about 6 hours a night; and my body wanting to play catch-up.  Either way, I&rsquo;m going to need to find a balance, what with work and play once again coming into conflict</p>
+]]></content>
+  </entry>
   
-  <script type="text/javascript">
-    $(document).ready(function(){
-        if (!window.jXHR){
-            var jxhr = document.createElement('script');
-            jxhr.type = 'text/javascript';
-            jxhr.src = '/javascripts/libs/jXHR.js';
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(jxhr, s);
-        }
+  <entry>
+    <title type="html"><![CDATA[Pumping Station: One: Awkward Grammar, Excellent Momentum]]></title>
+    <link href="http://mcpantz.org/blog/2009/01/14/pumping-station-one-awkward-grammar-excellent-momentum/"/>
+    <updated>2009-01-14T09:37:25-06:00</updated>
+    <id>http://mcpantz.org/blog/2009/01/14/pumping-station-one-awkward-grammar-excellent-momentum</id>
+    <content type="html"><![CDATA[<p>For the past few months I&rsquo;ve been working with a friend of mine to establish a hacker space in Chicago.  When we started, ther was ofthen just the two of us attending, and whoever else we managed to unsuspectingly wrangle into attending.</p>
 
-        github.showRepos({
-            user: 'pcmantz',
-            count: 4,
-            skip_forks: true,
-            target: '#gh_repos'
-        });
-    });
-  </script>
-  <script src="/javascripts/github.js" type="text/javascript"> </script>
-</section>
+<p>For those of you unfamiliar with the idea of a hacker space, let me give you my vision of the project.  Most of the people involved in this, including myself, are interested in projects that don&rsquo;t always fall along the traditional lines.  We&rsquo;re interested in science, technology, crafts, and more often than not the intersection between these areas.  We want to tinker, to create, to share ideas.  To go about this, we&rsquo;re essentially creating a mad scientist&rsquo;s clubhouse.  We&rsquo;re collecting power tools, electronics (both broken and functioning), building supplies, and anything else we think is useful.  I have an old ham radio I plan on jury-rigging up to <em>something</em> via serial port.</p>
 
+<p>Since Eric, myself, and a few others started drumming up interest, we&rsquo;ve come along way.  We drummed up an excellent name from a friend of mine at <a href="http://verecundia.blogspot.com/" title="Verecundia">Verecundia</a>; Pumping Station: One.  We&rsquo;ve started to visit other similar groups, and look at now defunct groups (Dorkbot Chicago, I&rsquo;m looking at you), garnishing interest.  Things started to take shape, and here we are.  Our evangelistic efforts have now placed our pledged initial membership  group to over 20 people.  This is not far from the target sustainability level necessary to keep the place afloat by membership fees.  We&rsquo;ve registered as a non-profit organization in Illinois and gotten our IRS numbers in order.  We&rsquo;re investigating spaces and soon we&rsquo;ll have our financials set up, collecting membership dues, and vote on our bylaws.  And most importantly, we&rsquo;re learning &amp; creating.  In essence, we&rsquo;re not far from having a grass-roots, non-profit, self-sustaining art &amp; technology collective in the span of six months.</p>
 
-<section>
-  <h1>My Pinboard</h1>
-  <ul id="pinboard_linkroll">Fetching linkroll&#8230;</ul>
-  <p><a href="http://pinboard.in/u:angelixd">My Pinboard Bookmarks &raquo;</a></p>
-</section>
-<script type="text/javascript">
-  var linkroll = 'pinboard_linkroll'; //id target for pinboard list
-  var pinboard_user = "angelixd"; //id target for pinboard list
-  var pinboard_count = 3; //id target for pinboard list
-  (function(){
-    var pinboardInit = document.createElement('script');
-    pinboardInit.type = 'text/javascript';
-    pinboardInit.async = true;
-    pinboardInit.src = '/javascripts/pinboard.js';
-    document.getElementsByTagName('head')[0].appendChild(pinboardInit);
-  })();
-</script>
-
-
-<section class="googleplus googleplus-hidden">
-  <h1>
-    <a href="https://plus.google.com/pcmantz@gmail.com?rel=author">
-      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
-      Google+
-    </a>
-  </h1>
-</section>
-
-
-
+<p>I invite anyone in the Chicago area, or anyone who may be passing through, to follow the progress of  <a href="http://pumpingstationone.org/" title="Pumping Station: One">Pumping Station: One</a>.  We&rsquo;ve got a lot planned, and we&rsquo;re always looking for new members to contribute ideas.</p>
+]]></content>
+  </entry>
   
-</aside>
+  <entry>
+    <title type="html"><![CDATA[The New Year]]></title>
+    <link href="http://mcpantz.org/blog/2009/01/02/the-new-year/"/>
+    <updated>2009-01-02T11:55:10-06:00</updated>
+    <id>http://mcpantz.org/blog/2009/01/02/the-new-year</id>
+    <content type="html"><![CDATA[<p>So here we are in 2009, and in between the hangovers and days off people are considering what they&rsquo;d like to achieve this year.  I already accomplished my major goal (see last post), but there&rsquo;s still much I&rsquo;d like to do before I feel like I&rsquo;m living a completely sane and productive life:</p>
 
-    </div>
-  </div>
-  <footer role="contentinfo"><p>
-  Copyright &copy; 2014 - Paul C. Mantz -
-  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
-</p>
+<ul>
+    <li>I&#8217;d like to start working out again.  I don&#8217;t specifically mean getting pumped in the gym, but to get back into martial arts or somehow train myself  physically.  I&#8217;m not wasting away, but I want to make sure I still am in good shape.</li>
+    <li>I want to be more of a polyglot, both spoken and computational.  I want to pick up Python and Haskell in the coming year, though using darcs, haskell&#8217;s community-standard revision control system, isn&#8217;t all that appealing to me.  Beyond that, I want a good excuse to start practicing my spoken languages again, as my German&#8217;s always been abysmal and my Spanish could use some polishing.  If I&#8217;m feeling particularly ambitious, I&#8217;ll pick up French; but that&#8217;s got a snowball&#8217;s chance right now.</li>
+    <li>In addition to adding new languages, I&#8217;d like to expand my toolkit.  I worked as a web programmer for half a year a while back, and I&#8217;d like to re-vamp those skills in Perl so I can put things together myself, and actually work on the web projects I&#8217;ve had in mind for a while.</li>
+    <li>While it&#8217;s certainly not a major issue now, I should be putting 15-20% of my take-home pay into savings.  I&#8217;ve got a couple recurring withdrawals set up to do that right now.</li>
+</ul>
 
-</footer>
+
+<p>All in all, my goals are relatively modest, but I feel like that&rsquo;s what makes them achievable.  Call me back in a year, and we&rsquo;ll see where I am.</p>
+]]></content>
+  </entry>
   
+  <entry>
+    <title type="html"><![CDATA[End of an Era… for the Better]]></title>
+    <link href="http://mcpantz.org/blog/2008/11/29/end-of-an-era-for-the-better/"/>
+    <updated>2008-11-29T19:15:05-06:00</updated>
+    <id>http://mcpantz.org/blog/2008/11/29/end-of-an-era-for-the-better</id>
+    <content type="html"><![CDATA[<p>When I turned 18, I was staying with my aunt and uncle in Champaign, IL; soon on my way to college.  The first thing I did that night was go down to the nearest convenience store and bought a pack of black and milds.  That didn&rsquo;t quite strike my fancy, so I switched to Marlboro Reds.  Since then, I&rsquo;ve been a pretty hardcore smoker.</p>
 
-<script type="text/javascript">
-      var disqus_shortname = 'mcpantz';
-      
-        
-        var disqus_script = 'count.js';
-      
-    (function () {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    }());
-</script>
+<p>I did manage to do a really good job of cutting back for about three months in the fall of 2006, where I was only having one cigarette a day.   Smoking was primarily a social activity for me, and my coworkers at the computer lab I was working at would often cut out about noon to re-center ourselves.  However, the stress involved with the last year of college compounded with a rather intense breakup plunged my addiction deeper than it had been before, and that&rsquo;s where it&rsquo;s been since.</p>
 
+<p>I found that smoking is more often a psychologically fulfilling activity for me, and that was reflected in my choice of tobacco.  From Black n&#8217; Milds, I switched to Marlboro Reds, to Djarum Blacks, and then to Lucky Strikes.  Cost &amp; convenience switched me to Drum rolling tobacco in the end, which I&rsquo;ve been smoking almost exclusively for the past three years or so.  My choices were often motivated by image, and I often relied on smoking as a fashion accessory as much as anything else.</p>
 
+<p>Every time I get sick, I&rsquo;d get nagged about how my revovery period is on the order of weeks instead of days, and that i should see a doctor.  I never considered it a major issue, because I knew what to expect.  However, recently after an illness, after I had recovered, I noticed that every time I laughed, I&rsquo;d cough.  Every time.  It was violent enough to the point where i noticed myself subconsciously trying to stop laughing.</p>
 
+<p>For someone like me who enjoys my sense of humor in life, I found this unacceptable.   So as of Sunday night, I have not had one cigarette.  I&rsquo;ve gone cold turkey.</p>
 
+<p>Today marks the sixth day since my last smoke, and so far I&rsquo;ve resisted the temptation many times, between going out to Neo, where at any point about 20% of the patrons are outside smoking, to simply being around people who leave the main group, and missing the change to express my usual cynicism and wit in a more relaxed, one-on-one context of sharing a mood-altering substance.</p>
 
-  <script type="text/javascript">
-    (function() {
-      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
-      script.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
-    })();
-  </script>
+<p>I&rsquo;ve also noticed that without the sweet, sweet nicotine coursing through my body, I&rsquo;ve become quite irritable and a bit more misanthropic than is usual for me.  However, this is usual and expected, and is supposed to end after a month or so after hating everyone.  Hopefully, I can get over being an insufferable dick to everyone, and thinking that everyone is the same, and reclaim a much healthier lifestyle.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[San Francisco Internet Media Company Looking for Disgruntled Employees to Fly Off the Hook on Film]]></title>
+    <link href="http://mcpantz.org/blog/2008/10/22/san-francisco-internet-media-company-looking-for-disgruntled-employees-to-fly-off-the-hook-on-film/"/>
+    <updated>2008-10-22T13:27:01-05:00</updated>
+    <id>http://mcpantz.org/blog/2008/10/22/san-francisco-internet-media-company-looking-for-disgruntled-employees-to-fly-off-the-hook-on-film</id>
+    <content type="html"><![CDATA[<p><a href="http://sfbay.craigslist.org/sfc/sof/888536966.html">Why yes, I <em>would</em> like to beat up my boss!</a></p>
 
+<p>Aren&rsquo;t there much better ways to go about this?  Maybe like the USPS 100 Man Kumite?  Stock Broker Bumfights?  I&rsquo;m sure they could do better than this.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[For All My Emacs Cohorts Out There]]></title>
+    <link href="http://mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there/"/>
+    <updated>2008-09-29T16:27:04-05:00</updated>
+    <id>http://mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there</id>
+    <content type="html"><![CDATA[<p>How do you like having an extremely extensible, mature, and stable text editor.  I sure do.  One thing that always bugged me when writing code is going through and finding all sorts of annoying trailing whitespace.  For most major modes, tabs are converted to spaces for consistency, but trailing whitespaces are neglected.  I was considering writing an elisp function to go ahead and take care this until I found <a href="http://www.splode.com/~friedman/software/emacs-lisp/src/whitespace.el">This little gem</a>.  I suggest that anyone that has to deal with syntax where trailing whitespace is ignored to have a crack at this.</p>
 
-
-  <script type="text/javascript">
-    (function(){
-      var twitterWidgets = document.createElement('script');
-      twitterWidgets.type = 'text/javascript';
-      twitterWidgets.async = true;
-      twitterWidgets.src = '//platform.twitter.com/widgets.js';
-      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
-    })();
-  </script>
-
-
-
-
-
-</body>
-</html>
+<p>For that matter, the rest of the interface enhancements on <a href="http://www.splode.com/~friedman/software/emacs-lisp/">the main page</a> look like they&rsquo;d be excellent additions to one&rsquo;s <tt>~/elisp/</tt> folder even today; as for the most part, the code here dates back to the early 90&rsquo;s.  Emacs isn&rsquo;t exactly a popular mail client anymore&hellip;</p>
+]]></content>
+  </entry>
+  
+</feed>

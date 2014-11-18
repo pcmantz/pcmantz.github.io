@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: ruby | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Rubyland]]></title>
+    <link href="http://mcpantz.org/blog/2012/01/14/rubyland/"/>
+    <updated>2012-01-14T18:47:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/01/14/rubyland</id>
+    <content type="html"><![CDATA[<p>Today, I gave ruby&rsquo;s ecosystem of web tools a try.  Wordpress isn&rsquo;t a good
+blogging solution for me, but i would like to have a public-facing,
+non-site-specific blog to pass about.  I am giving
+<a href="http://octopress.org/">Octopress</a> a try for managing my my non-machine
+readable output.</p>
+
+<p>I am enjoying the prospect of using a completely flatfile blog; as that means
+I have one less moving part to worry about.</p>
+
+<p>Hopefully I will have the motivation to post about some useful information
+here.  It turns out that the things that infuriate me tend to be very helpful
+to others, so keep your eyes peeled.</p>
+]]></content>
+  </entry>
+  
+</feed>

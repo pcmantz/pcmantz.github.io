@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: software | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/software/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[CPAN Shenanigans]]></title>
+    <link href="http://mcpantz.org/blog/2009/05/20/cpan-shenanigans/"/>
+    <updated>2009-05-20T17:15:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2009/05/20/cpan-shenanigans</id>
+    <content type="html"><![CDATA[<p>I just requested a CPAN account last night.  Hopefully I&rsquo;ll have the gumption to throw up all those that I feel are missing that I&rsquo;ve been missing that I would be very happy to add.  one of them is glob-match support in perl that&rsquo;s file-system agnostic.</p>
+
+<p>Of course, My first module&rsquo;s going to be a result of some <a href="http://scavhunt.uchicago.edu/" title="The University of Chicago Scavenger Hunt">Scav Hunt</a> tomfoolery, which I&rsquo;ll be sure to post about later, once it&rsquo;s up.  Let&rsquo;s just say that Jewish numerology will get a lot easier now.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Pumping Station: One Progress]]></title>
+    <link href="http://mcpantz.org/blog/2009/05/05/pumping-station-one-progress/"/>
+    <updated>2009-05-05T18:07:37-05:00</updated>
+    <id>http://mcpantz.org/blog/2009/05/05/pumping-station-one-progress</id>
+    <content type="html"><![CDATA[<p>What did i do this weekend?  I helped <a href="http://pumpingstationone.org/blog/2009/05/buildout-weekend---part-2-the-loft.html" title="Buildout Weekend - Part 2: The Loft">build a loft</a>, that&rsquo;s what.  And it was awesome.</p>
+
+<p>Next up on the agenda: I feel sometimes that I&rsquo;m the leader of the software interests at PS:1 somewhat, so I&rsquo;m going to make an executive decision on this.  I have many, many different projects going on aside from hacking, so I can&rsquo;t show up at the space every day like some of the more dedicated members have been doing.  Instead, I&rsquo;m just going to be regular about this.</p>
+
+<p>I&rsquo;m going to try and make it to the space Wednesday night and Sunday afternoon.  Anyone interested in programming languages, esoteric languages, functional programming, and software engineering should show up and talk/yell at me.  If enough people show up, we&rsquo;ll call it a meetup group.  If they don&rsquo;t, I&rsquo;ll read &amp; study by myself, and get anti-social and even more stabbity.  Your call.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Virtual worlds–because the real one doesn’t matter anymore]]></title>
+    <link href="http://mcpantz.org/blog/2008/07/11/virtual-worlds-because-the-real-one-doesnt-matter-anymore/"/>
+    <updated>2008-07-11T02:34:03-05:00</updated>
+    <id>http://mcpantz.org/blog/2008/07/11/virtual-worlds-because-the-real-one-doesnt-matter-anymore</id>
+    <content type="html"><![CDATA[<p>Google Labs just released <a href="http://www.lively.com">Lively</a>, a supposed contender to <a href="http://secondlife.com/">Second Life</a>.  I played the latter a decent amount to see what it has become, which is mostly a desperate cry for more and more attention.  People will wander about looking for someone to talk to, and run into a variety of weirdos.  I predict a combination of <a href="http://www.urbandictionary.com/define.php?term=RhyDin">late 90&rsquo;s AOL chatrooms</a>, IRC gaming, or any other effort at suspended reality that just feels empty and unfulfilling.</p>
+
+<p>The general cycle will probably engender the following:</p>
+
+<ul>
+    <li>early technology adopters and cool-hunters enter the scene, encountering a vast wasteland; declare it simultaneously the next best thing and a complete waste of time</li>
+    <li>tweens, internet-based subcultures, and perverts invade the start inhabiting the wasteland.  The first page is already filled with sex rooms.</li>
+    <li>the technology languishes on in limbo with Google occasionally trying to inject life into the project, only to be met with general disinterest and all-around frustration.</li>
+</ul>
+
+
+<p>I should probably note that I haven&rsquo;t actually tried Lively yet.  There are a number of things that Lively does get right, and should probably be adapted by any future virtual worlds:</p>
+
+<ul>
+    <li>Separate rooms.  Mind you, they could have called it something else that doesn&#8217;t make it feel like IRC, but it&#8217;s the right idea.  Keeping every area of a persistent world totally active in a distributed environment sucks resources that may *never* be used.it makes much more sense to just enforce a boundary &amp; throw up a skybox on users and make them talk to each other.</li>
+    <li> Browser integration.  No one wants to boot up a full-screen app to just see what rooms are popular and maybe if your friends are online.</li>
+    <li>An offline editor.  Rumors persist that <a href="http://sketchup.google.com/product/">Sketchup 7</a> may very well allow people to design objects in a dedicated atmosphere instead of trying to do so   in-game, allowing people to focus instead of deal with a bunch of furries running by in morally repulsive costumes.</li>
+</ul>
+
+
+<p>However, there are some other areas where it falls flat on its face:</p>
+
+<ul>
+    <li>Lack of user content from the get-go.  Google&#8217;s Don&#8217;t Announce Anything policy does give them the freedom to drop something When It&#8217;s Ready, and the lack of user content is just going to result in a bunchor restless users who are tired of seeing the same fucking samuri squirrel run around.  On another level, it does give them the ability to establish a look and feel to the program, but users may find that more stifling in the end.</li>
+    <li>Platform lock-in.  I know, I know, most of the civilized world uses windows, but most of the world who is going to write reviews of the software does not.  Especially design professionals; the ones who will actually be the cogs in the virtual market they are so desperately trying to create.</li>
+</ul>
+
+
+<p>The real problem is that no one&rsquo;s found a good reason to use virtual world technology in a non-gaming context.  Second Life general offensiveness in getting <em>anything</em> done in a reasonable time in-world has turned off a number of potential users, including myself.  However, there is a lot of potential markets that a decent implementation could access.  It&rsquo;s that latter part that really means something.</p>
+
+<p>In the meantime however, I&rsquo;m just going to curse until someone creates a virtual world that doesn&rsquo;t completely mock the cyberpunk ideal.</p>
+]]></content>
+  </entry>
+  
+</feed>

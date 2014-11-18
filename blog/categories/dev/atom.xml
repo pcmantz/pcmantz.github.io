@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: dev | M.C. Pantz]]></title>
+  <link href="http://mcpantz.org/blog/categories/dev/atom.xml" rel="self"/>
+  <link href="http://mcpantz.org/"/>
+  <updated>2014-11-18T14:54:55-06:00</updated>
+  <id>http://mcpantz.org/</id>
+  <author>
+    <name><![CDATA[Paul C. Mantz]]></name>
+    <email><![CDATA[pcmantz@gmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Building DBD::Pg for perlbrew on Ubuntu]]></title>
+    <link href="http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/"/>
+    <updated>2012-05-23T12:57:00-05:00</updated>
+    <id>http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu</id>
+    <content type="html"><![CDATA[<p>I get a lot of benefit from managing my own Perl via perlbrew, but I&rsquo;m fine
+using Ubuntu&rsquo;s packaged Postgres sever. However, Ubuntu strips down a lot of
+its applications into components, and you have to install development versions
+and header files separately if you want to compile everything. I&rsquo;m putting
+this here for anyone who might be trying to install DBD::Pg on top of
+perlbrew.  I&rsquo;m not going to claim this will work in all circumstances, and it
+assumes you have already installed Postgres, but it definitely worked for me.</p>
+
+<pre><code>sudo apt-get install libpq5 postgresql-server-dev-9.1
+POSTGRES_HOME='/usr/lib/postgresql/9.1' POSTGRES_INCLUDE='/usr/include/postgresql' cpanm Bundle::DBD::Pg
+</code></pre>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Perl Jails and You: local::lib, perlbrew, and Friends]]></title>
+    <link href="http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib/"/>
+    <updated>2012-02-08T23:39:00-06:00</updated>
+    <id>http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib</id>
+    <content type="html"><![CDATA[<p>In the ruby world, many people are aware of the
+<a href="http://beginrescueend.com/">ruby rvm</a> tool for ruby version management. Perl
+is not generally thought of as a virtual machine with an isolable environment,
+because of its frequent deep intertwining with the host operating system.
+However, there are tools that make this possible.</p>
+
+<p>The problem with using Perl in this fashion is not that the solution does not
+occur to people, but that the solution occurs to <em>many</em> people simultaneously.
+Most of the hacker luminaries in the Perl world have invented a respective
+solution. <a href="http://search.cpan.org/~bdfoy/">brian d foy</a> has written of his own
+<a href="http://stackoverflow.com/questions/398221/how-do-you-manage-perl-modules-when-using-a-package-manager/398397#398397">solution</a>,
+there is a <a href="https://metacpan.org/module/perlrocks">rubygems</a> implementation in
+the wild, and the packaging problem has had multiple attempts made on it.
+Today, I&rsquo;d like to review the best-in-class applications, and how to use them.</p>
+
+<h2>local::lib</h2>
+
+<p><a href="https://metacpan.org/module/local::lib">local::lib</a> creates the the
+configuration configuration information for a perl package directory without
+affecting the system perl&rsquo;s library paths. Before worrying about your base
+perl installation, you should know <code>local::lib</code>.  If you have a trustworthy
+sysadmin or are a junior dev on a team, this is most likely your situation.</p>
+
+<p><code>local::lib</code> lets you try install modules locally before installing them in a
+shared environment to experiment with new features, or install bleeding-edge
+versions of Perl-based command line apps like
+<a href="https://metacpan.org/module/App::GitGot">App::GitGot</a>,
+<a href="https://metacpan.org/module/App::Ack">App::Ack</a> for personal use.</p>
+
+<h2>perlbrew</h2>
+
+<p>Are you developing in an environment where you have to test against multipleo
+perl binaries? Then you should probably give <a href="http://perlbrew.pl/">perlbrew</a> a
+try.</p>
+
+<p>This application in a fully-featured suite for bootstrapping a perl
+environment. The perlbrew script allows you to install multiple versions of
+Perl and maintain library directories much more conveniently. In this regards,
+it is much more like rvm.</p>
+
+<p>Another similar feature that perlbrew shares with rvm is its management of
+library assets. The perlbrew binary includes a command to install cpanminus,
+which hopefully you are using now already (If you are not, I will have to
+write another blog post!) This copy coordinates with the built-in lib
+functionality to install libaries to the current chosen perl, minimizing the
+fuss and clash and conflict.</p>
+
+<h2>Combinations Thereof</h2>
+
+<p>If you are a solo developer who does not need to coordinate the usage of your
+development machine with other users, than <em>use perlbrew</em>. It provides the
+solutions of all the applications directly in a reproducible, scriptable
+manner.</p>
+
+<p>If you are in a situation where setting up your own perl is a troublesome
+wreck, use <code>local::lib</code>. You will have a clean library path to experiment
+with, and you can feel no guild whatsoever when you muck up a dependency and
+need to blow it away.</p>
+
+<p>Regardless of anything, use the right tool for the right job, and make sure
+you know that you are getting what you need. If you aren&rsquo;t, complain on
+<a href="http://www.irc.perl.org/">IRC</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>
