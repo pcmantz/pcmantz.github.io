@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: emacs | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/emacs/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/emacs/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Moving from escreen to workgroups]]></title>
-    <link href="http://mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups/"/>
+    <link href="http://www.mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups/"/>
     <updated>2012-10-21T14:05:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups</id>
+    <id>http://www.mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups</id>
     <content type="html"><![CDATA[<p>I use Emacs to manage multiple different projects simultaneously. Every
 professional engagement I&rsquo;ve had so far has had me working on multiple
 codebases at once. Add these to this my elisp and Org Mode files, and that&rsquo;s a
@@ -162,9 +162,9 @@ the cake.</p></li>
   
   <entry>
     <title type="html"><![CDATA[Large Files in Emacs]]></title>
-    <link href="http://mcpantz.org/blog/2012/02/05/large-files-in-emacs/"/>
+    <link href="http://www.mcpantz.org/blog/2012/02/05/large-files-in-emacs/"/>
     <updated>2012-02-05T15:43:00-06:00</updated>
-    <id>http://mcpantz.org/blog/2012/02/05/large-files-in-emacs</id>
+    <id>http://www.mcpantz.org/blog/2012/02/05/large-files-in-emacs</id>
     <content type="html"><![CDATA[<p>I have started work on a new project where a lot of the source files are huge;
 files are commonly over 1,000 lines in length.  While this is a massive
 <a href="http://www.codinghorror.com/blog/2006/05/code-smells.html">code smell</a> that
@@ -188,9 +188,9 @@ them; as sort of a &ldquo;floating&rdquo; header level rather than a specific on
   
   <entry>
     <title type="html"><![CDATA[For all my Emacs cohorts out there]]></title>
-    <link href="http://mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there/"/>
+    <link href="http://www.mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there/"/>
     <updated>2008-09-29T16:27:04-05:00</updated>
-    <id>http://mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there</id>
+    <id>http://www.mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there</id>
     <content type="html"><![CDATA[<p>How do you like having an extremely extensible, mature, and stable text editor.  I sure do.  One thing that always bugged me when writing code is going through and finding all sorts of annoying trailing whitespace.  For most major modes, tabs are converted to spaces for consistency, but trailing whitespaces are neglected.  I was considering writing an elisp function to go ahead and take care this until I found <a href="http://www.splode.com/~friedman/software/emacs-lisp/src/whitespace.el">This little gem</a>.  I suggest that anyone that has to deal with syntax where trailing whitespace is ignored to have a crack at this.</p>
 
 <p>For that matter, the rest of the interface enhancements on <a href="http://www.splode.com/~friedman/software/emacs-lisp/">the main page</a> look like they&rsquo;d be excellent additions to one&rsquo;s <tt>~/elisp/</tt> folder even today; as for the most part, the code here dates back to the early 90&rsquo;s.  Emacs isn&rsquo;t exactly a popular mail client anymore&hellip;</p>

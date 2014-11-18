@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: ruby | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/ruby/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/ruby/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Rubyland]]></title>
-    <link href="http://mcpantz.org/blog/2012/01/14/rubyland/"/>
+    <link href="http://www.mcpantz.org/blog/2012/01/14/rubyland/"/>
     <updated>2012-01-14T18:47:00-06:00</updated>
-    <id>http://mcpantz.org/blog/2012/01/14/rubyland</id>
+    <id>http://www.mcpantz.org/blog/2012/01/14/rubyland</id>
     <content type="html"><![CDATA[<p>Today, I gave ruby&rsquo;s ecosystem of web tools a try.  Wordpress isn&rsquo;t a good
 blogging solution for me, but i would like to have a public-facing,
 non-site-specific blog to pass about.  I am giving

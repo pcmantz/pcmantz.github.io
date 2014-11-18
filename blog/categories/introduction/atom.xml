@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: introduction | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/introduction/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/introduction/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[A New Beginning]]></title>
-    <link href="http://mcpantz.org/blog/2008/01/24/a-new-beginning/"/>
+    <link href="http://www.mcpantz.org/blog/2008/01/24/a-new-beginning/"/>
     <updated>2008-01-24T18:41:29-06:00</updated>
-    <id>http://mcpantz.org/blog/2008/01/24/a-new-beginning</id>
+    <id>http://www.mcpantz.org/blog/2008/01/24/a-new-beginning</id>
     <content type="html"><![CDATA[<p>Hello everyone,</p>
 
 <p>My name&rsquo;s Paul Mantz and I&rsquo;m starting a public blog.  I plan on putting my professional endeavours here; as well as my hobbies, interests, and other such things I may want public feedback on.   So sit back, relax, and enjoy the show.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: numerology | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/numerology/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/numerology/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[CPAN Shenanigans]]></title>
-    <link href="http://mcpantz.org/blog/2009/05/20/cpan-shenanigans/"/>
+    <link href="http://www.mcpantz.org/blog/2009/05/20/cpan-shenanigans/"/>
     <updated>2009-05-20T17:15:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2009/05/20/cpan-shenanigans</id>
+    <id>http://www.mcpantz.org/blog/2009/05/20/cpan-shenanigans</id>
     <content type="html"><![CDATA[<p>I just requested a CPAN account last night.  Hopefully I&rsquo;ll have the gumption to throw up all those that I feel are missing that I&rsquo;ve been missing that I would be very happy to add.  one of them is glob-match support in perl that&rsquo;s file-system agnostic.</p>
 
 <p>Of course, My first module&rsquo;s going to be a result of some <a href="http://scavhunt.uchicago.edu/" title="The University of Chicago Scavenger Hunt">Scav Hunt</a> tomfoolery, which I&rsquo;ll be sure to post about later, once it&rsquo;s up.  Let&rsquo;s just say that Jewish numerology will get a lot easier now.</p>

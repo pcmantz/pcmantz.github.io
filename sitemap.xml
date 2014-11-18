@@ -1,210 +1,210 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/10/21/moving-from-escreen-to-workgroups/</loc>
     <lastmod>2012-10-21T14:05:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/</loc>
     <lastmod>2012-08-01T00:41:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/</loc>
     <lastmod>2012-06-24T15:25:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/06/24/old-domain-new-blog-taste/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/06/24/old-domain-new-blog-taste/</loc>
     <lastmod>2012-06-24T00:33:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/06/17/yapc-na-post-mortem/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/06/17/yapc-na-post-mortem/</loc>
     <lastmod>2012-06-17T23:37:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/05/25/old-blog-content-converted/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/05/25/old-blog-content-converted/</loc>
     <lastmod>2012-05-25T13:14:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/</loc>
     <lastmod>2012-05-23T12:57:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib/</loc>
     <lastmod>2012-02-08T23:39:00-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/02/05/large-files-in-emacs/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/02/05/large-files-in-emacs/</loc>
     <lastmod>2012-02-05T15:43:00-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/</loc>
     <lastmod>2012-01-29T21:54:00-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2012/01/14/rubyland/</loc>
+    <loc>http://www.mcpantz.org/blog/2012/01/14/rubyland/</loc>
     <lastmod>2012-01-14T18:47:00-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2009/05/20/cpan-shenanigans/</loc>
+    <loc>http://www.mcpantz.org/blog/2009/05/20/cpan-shenanigans/</loc>
     <lastmod>2009-05-20T17:15:00-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2009/05/05/pumping-station-one-progress/</loc>
+    <loc>http://www.mcpantz.org/blog/2009/05/05/pumping-station-one-progress/</loc>
     <lastmod>2009-05-05T18:07:37-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2009/02/22/back-to-your-normal-scheduled-program/</loc>
+    <loc>http://www.mcpantz.org/blog/2009/02/22/back-to-your-normal-scheduled-program/</loc>
     <lastmod>2009-02-22T22:59:40-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2009/01/22/changes-in-routine/</loc>
+    <loc>http://www.mcpantz.org/blog/2009/01/22/changes-in-routine/</loc>
     <lastmod>2009-01-22T01:39:48-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2009/01/14/pumping-station-one-awkward-grammar-excellent-momentum/</loc>
+    <loc>http://www.mcpantz.org/blog/2009/01/14/pumping-station-one-awkward-grammar-excellent-momentum/</loc>
     <lastmod>2009-01-14T09:37:25-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2009/01/02/the-new-year/</loc>
+    <loc>http://www.mcpantz.org/blog/2009/01/02/the-new-year/</loc>
     <lastmod>2009-01-02T11:55:10-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/11/29/end-of-an-era-for-the-better/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/11/29/end-of-an-era-for-the-better/</loc>
     <lastmod>2008-11-29T19:15:05-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/10/22/san-francisco-internet-media-company-looking-for-disgruntled-employees-to-fly-off-the-hook-on-film/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/10/22/san-francisco-internet-media-company-looking-for-disgruntled-employees-to-fly-off-the-hook-on-film/</loc>
     <lastmod>2008-10-22T13:27:01-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/09/29/for-all-my-emacs-cohorts-out-there/</loc>
     <lastmod>2008-09-29T16:27:04-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/09/10/for-all-of-you-wondering-when-the-world-is-going-to-end/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/09/10/for-all-of-you-wondering-when-the-world-is-going-to-end/</loc>
     <lastmod>2008-09-10T12:13:11-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/08/31/hot-dougs-a-chicago-institution/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/08/31/hot-dougs-a-chicago-institution/</loc>
     <lastmod>2008-08-31T00:38:25-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/08/16/i-feel-pretty-badass-about-now/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/08/16/i-feel-pretty-badass-about-now/</loc>
     <lastmod>2008-08-16T17:29:36-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/08/08/tesla-roadster-spotted-in-the-wild/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/08/08/tesla-roadster-spotted-in-the-wild/</loc>
     <lastmod>2008-08-08T17:00:19-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/07/11/virtual-worlds-because-the-real-one-doesnt-matter-anymore/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/07/11/virtual-worlds-because-the-real-one-doesnt-matter-anymore/</loc>
     <lastmod>2008-07-11T02:34:03-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/07/02/a-survey-of-contemporary-poetry/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/07/02/a-survey-of-contemporary-poetry/</loc>
     <lastmod>2008-07-02T03:22:36-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/05/12/tony-bennet-is-going-to-kill-me/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/05/12/tony-bennet-is-going-to-kill-me/</loc>
     <lastmod>2008-05-12T18:41:44-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/04/09/chicago-summer-festival-extravaganza/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/04/09/chicago-summer-festival-extravaganza/</loc>
     <lastmod>2008-04-09T02:40:45-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/03/24/irc-is-not-irrelevant/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/03/24/irc-is-not-irrelevant/</loc>
     <lastmod>2008-03-24T00:32:23-05:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/02/22/employment/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/02/22/employment/</loc>
     <lastmod>2008-02-22T20:07:17-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/02/19/fun-with-regexes/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/02/19/fun-with-regexes/</loc>
     <lastmod>2008-02-19T22:27:44-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/02/16/hack-the-planet/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/02/16/hack-the-planet/</loc>
     <lastmod>2008-02-16T15:24:13-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/02/10/i-met-the-author-of-dr-fun/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/02/10/i-met-the-author-of-dr-fun/</loc>
     <lastmod>2008-02-10T18:11:10-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/02/01/ambition/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/02/01/ambition/</loc>
     <lastmod>2008-02-01T14:01:20-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/01/31/indecision/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/01/31/indecision/</loc>
     <lastmod>2008-01-31T19:53:25-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/01/25/wordpress-hackery/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/01/25/wordpress-hackery/</loc>
     <lastmod>2008-01-25T17:53:02-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/01/24/a-new-beginning/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/01/24/a-new-beginning/</loc>
     <lastmod>2008-01-24T18:41:29-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/2008/01/22/about/</loc>
+    <loc>http://www.mcpantz.org/blog/2008/01/22/about/</loc>
     <lastmod>2008-01-22T13:48:05-06:00</lastmod>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/blog/archives/</loc>
-    <lastmod>2014-11-18T15:01:02-06:00</lastmod>
+    <loc>http://www.mcpantz.org/blog/archives/</loc>
+    <lastmod>2014-11-18T15:22:22-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/</loc>
-    <lastmod>2014-11-18T15:01:02-06:00</lastmod>
+    <loc>http://www.mcpantz.org/</loc>
+    <lastmod>2014-11-18T15:22:22-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>http://mcpantz.org/about/</loc>
-    <lastmod>2014-11-18T15:01:02-06:00</lastmod>
+    <loc>http://www.mcpantz.org/about/</loc>
+    <lastmod>2014-11-18T15:22:22-06:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>

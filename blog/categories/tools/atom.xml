@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: tools | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/tools/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/tools/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Iterators Make You Lazy]]></title>
-    <link href="http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/"/>
+    <link href="http://www.mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/"/>
     <updated>2012-06-24T15:25:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy</id>
+    <id>http://www.mcpantz.org/blog/2012/06/24/iterators-make-you-lazy</id>
     <content type="html"><![CDATA[<p>One of the most productive &ldquo;A-Ha!&rdquo; moments I&rsquo;ve had as a developer came when I
 learned how to use iterators, and the dramatic effect that it has on my coding
 style. When we introduced the concept to one layer of code to handle a
@@ -76,9 +76,9 @@ patch, so we&rsquo;ll see how it plays out.</p>
   
   <entry>
     <title type="html"><![CDATA[Old Blog Content Converted]]></title>
-    <link href="http://mcpantz.org/blog/2012/05/25/old-blog-content-converted/"/>
+    <link href="http://www.mcpantz.org/blog/2012/05/25/old-blog-content-converted/"/>
     <updated>2012-05-25T13:14:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2012/05/25/old-blog-content-converted</id>
+    <id>http://www.mcpantz.org/blog/2012/05/25/old-blog-content-converted</id>
     <content type="html"><![CDATA[<p>I converted all my old published content from <a href="http://www.mcpantz.org">mcpantz.org</a> to this new GitHub page.  Once I confirm that everything else is in place I am going to cancel the other page, and save a few bucks on hosting. In the meantime, enjoy any content that you may not have seen before.</p>
 
 <p>If you are redirected to this page after the domain name switch; apologies for the broken link.  Please use a newer, more stable permalink that my site now provides.</p>
@@ -87,9 +87,9 @@ patch, so we&rsquo;ll see how it plays out.</p>
   
   <entry>
     <title type="html"><![CDATA[Setting up rxvt-unicode on Ubuntu 11.10]]></title>
-    <link href="http://mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/"/>
+    <link href="http://www.mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10/"/>
     <updated>2012-01-29T21:54:00-06:00</updated>
-    <id>http://mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10</id>
+    <id>http://www.mcpantz.org/blog/2012/01/29/setting-up-rxvt-unicode-on-ubuntu-11-dot-10</id>
     <content type="html"><![CDATA[<p>I&rsquo;ve been an Ubuntu &amp; Mint user for the past few years.  I am not particularly
 focused on usability or community, but it is nice using an operating system
 where most of the kinks have been ironed out for me by the efforts of others.</p>

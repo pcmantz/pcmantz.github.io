@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: dev | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/dev/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/dev/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Building DBD::Pg for perlbrew on Ubuntu]]></title>
-    <link href="http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/"/>
+    <link href="http://www.mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu/"/>
     <updated>2012-05-23T12:57:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu</id>
+    <id>http://www.mcpantz.org/blog/2012/05/23/building-dbd-pg-for-perlbrew-on-ubuntu</id>
     <content type="html"><![CDATA[<p>I get a lot of benefit from managing my own Perl via perlbrew, but I&rsquo;m fine
 using Ubuntu&rsquo;s packaged Postgres sever. However, Ubuntu strips down a lot of
 its applications into components, and you have to install development versions
@@ -34,9 +34,9 @@ POSTGRES_HOME='/usr/lib/postgresql/9.1' POSTGRES_INCLUDE='/usr/include/postgresq
   
   <entry>
     <title type="html"><![CDATA[Perl Jails and You: local::lib, perlbrew, and Friends]]></title>
-    <link href="http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib/"/>
+    <link href="http://www.mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib/"/>
     <updated>2012-02-08T23:39:00-06:00</updated>
-    <id>http://mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib</id>
+    <id>http://www.mcpantz.org/blog/2012/02/08/perl-jails-and-you-local-lib</id>
     <content type="html"><![CDATA[<p>In the ruby world, many people are aware of the
 <a href="http://beginrescueend.com/">ruby rvm</a> tool for ruby version management. Perl
 is not generally thought of as a virtual machine with an isolable environment,

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: programming | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/programming/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/programming/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Iterators Make You Lazy]]></title>
-    <link href="http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/"/>
+    <link href="http://www.mcpantz.org/blog/2012/06/24/iterators-make-you-lazy/"/>
     <updated>2012-06-24T15:25:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2012/06/24/iterators-make-you-lazy</id>
+    <id>http://www.mcpantz.org/blog/2012/06/24/iterators-make-you-lazy</id>
     <content type="html"><![CDATA[<p>One of the most productive &ldquo;A-Ha!&rdquo; moments I&rsquo;ve had as a developer came when I
 learned how to use iterators, and the dramatic effect that it has on my coding
 style. When we introduced the concept to one layer of code to handle a
@@ -76,9 +76,9 @@ patch, so we&rsquo;ll see how it plays out.</p>
   
   <entry>
     <title type="html"><![CDATA[Large Files in Emacs]]></title>
-    <link href="http://mcpantz.org/blog/2012/02/05/large-files-in-emacs/"/>
+    <link href="http://www.mcpantz.org/blog/2012/02/05/large-files-in-emacs/"/>
     <updated>2012-02-05T15:43:00-06:00</updated>
-    <id>http://mcpantz.org/blog/2012/02/05/large-files-in-emacs</id>
+    <id>http://www.mcpantz.org/blog/2012/02/05/large-files-in-emacs</id>
     <content type="html"><![CDATA[<p>I have started work on a new project where a lot of the source files are huge;
 files are commonly over 1,000 lines in length.  While this is a massive
 <a href="http://www.codinghorror.com/blog/2006/05/code-smells.html">code smell</a> that
@@ -102,9 +102,9 @@ them; as sort of a &ldquo;floating&rdquo; header level rather than a specific on
   
   <entry>
     <title type="html"><![CDATA[Rubyland]]></title>
-    <link href="http://mcpantz.org/blog/2012/01/14/rubyland/"/>
+    <link href="http://www.mcpantz.org/blog/2012/01/14/rubyland/"/>
     <updated>2012-01-14T18:47:00-06:00</updated>
-    <id>http://mcpantz.org/blog/2012/01/14/rubyland</id>
+    <id>http://www.mcpantz.org/blog/2012/01/14/rubyland</id>
     <content type="html"><![CDATA[<p>Today, I gave ruby&rsquo;s ecosystem of web tools a try.  Wordpress isn&rsquo;t a good
 blogging solution for me, but i would like to have a public-facing,
 non-site-specific blog to pass about.  I am giving
@@ -122,9 +122,9 @@ to others, so keep your eyes peeled.</p>
   
   <entry>
     <title type="html"><![CDATA[CPAN Shenanigans]]></title>
-    <link href="http://mcpantz.org/blog/2009/05/20/cpan-shenanigans/"/>
+    <link href="http://www.mcpantz.org/blog/2009/05/20/cpan-shenanigans/"/>
     <updated>2009-05-20T17:15:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2009/05/20/cpan-shenanigans</id>
+    <id>http://www.mcpantz.org/blog/2009/05/20/cpan-shenanigans</id>
     <content type="html"><![CDATA[<p>I just requested a CPAN account last night.  Hopefully I&rsquo;ll have the gumption to throw up all those that I feel are missing that I&rsquo;ve been missing that I would be very happy to add.  one of them is glob-match support in perl that&rsquo;s file-system agnostic.</p>
 
 <p>Of course, My first module&rsquo;s going to be a result of some <a href="http://scavhunt.uchicago.edu/" title="The University of Chicago Scavenger Hunt">Scav Hunt</a> tomfoolery, which I&rsquo;ll be sure to post about later, once it&rsquo;s up.  Let&rsquo;s just say that Jewish numerology will get a lot easier now.</p>
@@ -133,9 +133,9 @@ to others, so keep your eyes peeled.</p>
   
   <entry>
     <title type="html"><![CDATA[Pumping Station: One Progress]]></title>
-    <link href="http://mcpantz.org/blog/2009/05/05/pumping-station-one-progress/"/>
+    <link href="http://www.mcpantz.org/blog/2009/05/05/pumping-station-one-progress/"/>
     <updated>2009-05-05T18:07:37-05:00</updated>
-    <id>http://mcpantz.org/blog/2009/05/05/pumping-station-one-progress</id>
+    <id>http://www.mcpantz.org/blog/2009/05/05/pumping-station-one-progress</id>
     <content type="html"><![CDATA[<p>What did i do this weekend?  I helped <a href="http://pumpingstationone.org/blog/2009/05/buildout-weekend---part-2-the-loft.html" title="Buildout Weekend - Part 2: The Loft">build a loft</a>, that&rsquo;s what.  And it was awesome.</p>
 
 <p>Next up on the agenda: I feel sometimes that I&rsquo;m the leader of the software interests at PS:1 somewhat, so I&rsquo;m going to make an executive decision on this.  I have many, many different projects going on aside from hacking, so I can&rsquo;t show up at the space every day like some of the more dedicated members have been doing.  Instead, I&rsquo;m just going to be regular about this.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: cli | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/cli/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/cli/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Shell Paths on Mountain Lion are a Confusing Mess]]></title>
-    <link href="http://mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/"/>
+    <link href="http://www.mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess/"/>
     <updated>2012-08-01T00:41:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess</id>
+    <id>http://www.mcpantz.org/blog/2012/08/01/shell-paths-on-mountain-lion-are-a-confusing-mess</id>
     <content type="html"><![CDATA[<p>I am setting up an OS X 10.8 (Mountain Lion) machine as a development
 machine. For my own personal use I prefer using a Linux box, but between my
 own nostalgia for <a href="http://www.gentoo.org/">Gentoo</a> and the peculiar yet

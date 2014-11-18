@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: conferences | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/conferences/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/conferences/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[YAPC::NA Post-Mortem]]></title>
-    <link href="http://mcpantz.org/blog/2012/06/17/yapc-na-post-mortem/"/>
+    <link href="http://www.mcpantz.org/blog/2012/06/17/yapc-na-post-mortem/"/>
     <updated>2012-06-17T23:37:00-05:00</updated>
-    <id>http://mcpantz.org/blog/2012/06/17/yapc-na-post-mortem</id>
+    <id>http://www.mcpantz.org/blog/2012/06/17/yapc-na-post-mortem</id>
     <content type="html"><![CDATA[<p>I attended my Fourth <a href="http://yapcna.org/">YAPC::NA</a> this past week, and just
 as usual, I had a blast. Conferences are valuable experiences that allow one
 to step back and re-evaluate one&rsquo;s work compared to the Zeitgeist of the

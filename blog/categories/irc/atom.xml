@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: irc | M.C. Pantz]]></title>
-  <link href="http://mcpantz.org/blog/categories/irc/atom.xml" rel="self"/>
-  <link href="http://mcpantz.org/"/>
-  <updated>2014-11-18T15:01:02-06:00</updated>
-  <id>http://mcpantz.org/</id>
+  <link href="http://www.mcpantz.org/blog/categories/irc/atom.xml" rel="self"/>
+  <link href="http://www.mcpantz.org/"/>
+  <updated>2014-11-18T15:22:22-06:00</updated>
+  <id>http://www.mcpantz.org/</id>
   <author>
     <name><![CDATA[Paul C. Mantz]]></name>
     <email><![CDATA[pcmantz@gmail.com]]></email>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[IRC is not Irrelevant]]></title>
-    <link href="http://mcpantz.org/blog/2008/03/24/irc-is-not-irrelevant/"/>
+    <link href="http://www.mcpantz.org/blog/2008/03/24/irc-is-not-irrelevant/"/>
     <updated>2008-03-24T00:32:23-05:00</updated>
-    <id>http://mcpantz.org/blog/2008/03/24/irc-is-not-irrelevant</id>
+    <id>http://www.mcpantz.org/blog/2008/03/24/irc-is-not-irrelevant</id>
     <content type="html"><![CDATA[<p>I have been fighting with <a href="http://www.samba.org">Samba</a> recently, to get it configured correctly.  I only wish this wasn&rsquo;t such a black art, but it&rsquo;s what I do.  I had thought backups were working, but something far more sinister was happening, and I didn&rsquo;t know what to do about it.  A coworker of mine recently suggested that we hang out in the #amanda room on <a href="http://www.freenode.net">irc.freenode.net</a>, so I hopped over to #samba.  one half hour later; I learned a lot more than I thought I could in a chat room.</p>
 
 <p>So here&rsquo;s a hint for all you young programmers out there: open source is here to help, and a lot of us are bored and hanging out on IRC, because we are cool check it out!  In fact, if anyone would like to talk about BackupPC, join me on irc.freenode.net in #backuppc.</p>

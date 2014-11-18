@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://mcpantz.org/sitemap.xml 
+Sitemap: http://www.mcpantz.org/sitemap.xml 
