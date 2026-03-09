@@ -1,0 +1,19 @@
+{{ define "main" }}
+    {{ .Content }}
+
+    {{ range (where site.RegularPages "Section" "blog").ByDate.Reverse | first 5 }}
+    <article>
+        <header class="content__header">
+            <h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
+            <p>{{ .Date.Format "2006-01-02" }}</p>
+        </header>
+        <div class="content__body">
+            {{ .Summary }}
+        </div>
+        {{ if .Truncated }}
+        <p><a href="{{ .Permalink }}">Read more...</a></p>
+        {{ end }}
+        <hr>
+    </article>
+    {{ end }}
+{{ end }}
