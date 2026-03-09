@@ -1,0 +1,65 @@
+#!/usr/bin/env ruby
+#
+# mise description="Create a new blog post"
+# mise usage="new-post <title>"
+
+require 'date'
+require 'fileutils'
+
+class NewPost
+  USAGE = <<~USAGE
+    Usage: mise run new-post <title>
+    Example: mise run new-post "My Great Post"
+  USAGE
+
+  def self.from_argv(argv)
+    if argv.empty?
+      $stderr.puts USAGE
+      exit 1
+    end
+
+    title = argv.join(' ')
+    new(title: title).call
+  end
+
+  def initialize(title:, date: Date.today)
+    @title = title
+    @date = date
+  end
+
+  def call
+    FileUtils.mkdir_p(File.dirname(markdown_path))
+    File.write(markdown_path, front_matter)
+    puts "Created: #{markdown_path}"
+    puts "Edit the file and remove 'draft: true' when ready to publish."
+  end
+
+  def slug
+    @title
+      .downcase
+      .gsub(/[^a-z0-9\s-]/, '')
+      .gsub(/\s+/, '-')
+      .gsub(/-+/, '-')
+      .gsub(/^-|-$/, '')
+  end
+
+  def markdown_path
+    "content/blog/#{@date.strftime('%Y-%m-%d')}-#{slug}.md"
+  end
+
+  private
+
+  def front_matter
+    <<~FRONTMATTER
+      ---
+      title: "#{@title}"
+      date: #{@date.strftime('%Y-%m-%d')}T00:00:00-06:00
+      slug: "#{slug}"
+      draft: true
+      ---
+
+    FRONTMATTER
+  end
+end
+
+NewPost.from_argv(ARGV)
