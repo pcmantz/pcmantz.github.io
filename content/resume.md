@@ -1,6 +1,6 @@
 +++
 date = '2026-03-09T16:08:15-05:00'
-draft = true
+draft = false
 title = 'Paul C. Mantz'
 +++
 
