@@ -42,6 +42,26 @@ url = "/resume"
 weight = 10
 
 
+[[params.socialLinks]]
+icon = "fa-brands fa-github"
+title = "GitHub"
+url = "https://github.com/pcmantz"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-linkedin"
+title = "LinkedIn"
+url = "https://www.linkedin.com/in/pcmantz"
+
+[[params.socialLinks]]
+icon = "fa-brands fa-mastodon"
+title = "Mastodon"
+url = "https://mastodon.social/@angelixd"
+
+[[params.socialLinks]]
+icon = "fa-solid fa-envelope"
+title = "Email"
+url = "mailto:pcmantz@mcpantz.org"
+
 [taxonomies]
 category = "categories"
 tag = "tags"
