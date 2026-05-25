@@ -1,4 +1,8 @@
 # mise.toml
 
+[tools]
+"cargo:pitchfork-cli" = "latest"
+hugo = "latest"
+
 [task_config]
 includes = ["bin"]

@@ -86,13 +86,15 @@ Which launches the corresponding program. If you already have a corresponding bu
 (or directory, read the docs!), you will be asked for a label and you'll have both your programs
 running happily together.
 
-Please give [vtermux](https://github.com/pcmantz/vtermux) a try! I've been using it happily in my efforts to turn Emacs into an
-LLM-powered IDE (article forthcoming...). I suspect this package can put to rest
+Please give [vtermux](https://github.com/pcmantz/vtermux) a try! I've been using it happily in my
+efforts to turn Emacs into an LLM-powered IDE (article forthcoming...). I suspect this package will
+be able to bridge a lot gaps in developer workflows that otherwise would take a lot of custom code
+and effort, which maybe erroneous when a suitable TUI is right there.
 
 Many thanks to the authors of the packages
 [reformatter](https://github.com/purcell/emacs-reformatter),
 [multi-term](https://www.emacswiki.org/emacs/MultiTerm "multi-term"),
 [multi-vterm](https://github.com/suonlight/multi-vterm/), and
-[vterm](https://github.com/suonlight/multi-vterm/) itself for all the inspiration and time they have
+[vterm](https://github.com/akermu/emacs-libvterm) itself for all the inspiration and time they have
 saved me by allowing me to cobble together an effective workspace to get things done. I hope this
 helps others in the same fashion.
